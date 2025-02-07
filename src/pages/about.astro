@@ -1,0 +1,53 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline="About us">
+    <Fragment slot="title">
+      <span
+        class="font-semibold bg-gradient-to-r text-transparent bg-clip-text"
+        style="background-image: linear-gradient(to right, #2F9BFF, #FD7C8E);"
+      >
+        LiquidOS</span
+      >
+      <br />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      At LiquidOS, we are dedicated to revolutionizing the way humans interact with AI through the operating system
+      itself.
+    </Fragment>
+  </Hero>
+
+  <!-- Steps2 Widget ****************** -->
+  <Steps2
+    title="Our Values"
+    subtitle="We believe in innovation, ethics, and putting users first. LiquidOS is built on principles that drive a smarter and more intuitive future."
+    items={[
+      {
+        title: 'User-First Design',
+        description: 'Every decision we make prioritizes user experience, accessibility, and seamless interaction.',
+      },
+      {
+        title: 'Continuous Innovation',
+        description: 'We evolve constantly, integrating cutting-edge AI to enhance adaptability and efficiency.',
+      },
+      {
+        title: 'Ethical AI',
+        description: 'Transparency, fairness, and privacy are at our core, ensuring responsible AI-driven experiences.',
+      },
+    ]}
+  />
+</Layout>
