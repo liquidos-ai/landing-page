@@ -23,9 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  site: 'https://liquidos-ai.github.io',
-  base: '/landing-page',
-  trailingSlash: 'always',
+  site: 'https://liquidos.ai',
 
   integrations: [
     tailwind({
