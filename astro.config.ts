@@ -25,6 +25,7 @@ export default defineConfig({
   output: 'static',
   site: 'https://liquidos-ai.github.io',
   base: '/landing-page',
+  trailingSlash: 'always',
 
   integrations: [
     tailwind({
