@@ -117,6 +117,14 @@ export const headerData = {
     //   },
     // ],
     // actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+    {
+      text: 'Home',
+      href: getPermalink('/'),
+    },
+    {
+      text: 'About',
+      href: getPermalink('/about'),
+    },
   ],
 };
 
