@@ -1,41 +1,52 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
-import plugin from 'tailwindcss/plugin';
-import typographyPlugin from '@tailwindcss/typography';
-
+/** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,json,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
-        primary: 'var(--aw-color-primary)',
-        secondary: 'var(--aw-color-secondary)',
-        accent: 'var(--aw-color-accent)',
-        default: 'var(--aw-color-text-default)',
-        muted: 'var(--aw-color-text-muted)',
-      },
       fontFamily: {
-        sans: ['var(--aw-font-sans, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--aw-font-serif, ui-serif)', ...defaultTheme.fontFamily.serif],
-        heading: ['var(--aw-font-heading, ui-sans-serif)', ...defaultTheme.fontFamily.sans],
+        sans: ['system-ui', 'sans-serif'],
       },
-
-      animation: {
-        fade: 'fadeInUp 1s both',
-      },
-
-      keyframes: {
-        fadeInUp: {
-          '0%': { opacity: 0, transform: 'translateY(2rem)' },
-          '100%': { opacity: 1, transform: 'translateY(0)' },
+      colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
         },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
-  plugins: [
-    typographyPlugin,
-    plugin(({ addVariant }) => {
-      addVariant('intersect', '&:not([no-intersect])');
-    }),
-  ],
-  darkMode: 'class',
+  plugins: [require("tailwindcss-animate")],
 };

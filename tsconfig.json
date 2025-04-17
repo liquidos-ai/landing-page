@@ -1,13 +1,7 @@
 {
-  "extends": "astro/tsconfigs/base",
-  "compilerOptions": {
-    "strictNullChecks": true,
-    "allowJs": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    }
-  },
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist/"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }
