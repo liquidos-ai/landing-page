@@ -66,14 +66,14 @@ export function ParticleSphere() {
     const noise4D = createNoise4D();
 
     // Mouse interaction
-    let targetRotation = 0;
     let targetRotationY = 0;
+    let targetRotationX = 0;
     const handleMouseMove = (e: MouseEvent) => {
       const rect = containerRef.current!.getBoundingClientRect();
       const offsetX = (e.clientX - rect.left) / rect.width - 0.5;
       const offsetY = (e.clientY - rect.top) / rect.height - 0.5;
-      targetRotation = offsetX * 0.3;
-      targetRotationY = offsetY * 0.3;
+      targetRotationY = offsetX * 1.5;
+      targetRotationX = offsetY * 1.5;
     };
     // containerRef.current.addEventListener('mousemove', handleMouseMove);
     window.addEventListener('mousemove', handleMouseMove);
@@ -103,8 +103,8 @@ export function ParticleSphere() {
       }
 
       geometry.attributes.position.needsUpdate = true;
-      particles.rotation.y += (targetRotation - particles.rotation.y) * 0.05;
-      particles.rotation.x += (targetRotationY - particles.rotation.x) * 0.05;
+      particles.rotation.y += (targetRotationY - particles.rotation.y) * 0.05;
+      particles.rotation.x += (targetRotationX - particles.rotation.x) * 0.05;
 
       renderer.render(scene, camera);
     };
