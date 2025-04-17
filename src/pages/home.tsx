@@ -12,9 +12,9 @@ export function Home() {
             <div className="z-10 text-center md:text-left">
               <h1 className="mb-8">
                 <span className="gradient-text font-[450] text-5xl md:text-7xl xl:text-8xl block">
-                  LiquidOS:
+                  LiquidOS
                 </span>
-                <span className="text-3xl md:text-4xl xl:text-5xl text-gray-600 dark:text-gray-300 font-[450] leading-tight tracking-[-0.02em] block">
+                <span className="text-3xl md:text-4xl xl:text-5xl text-gray-600 dark:text-gray-200 font-[450] leading-tight tracking-[-0.02em] block">
                   The AI Agent That
                   <br />
                   Evolves on Its Own
