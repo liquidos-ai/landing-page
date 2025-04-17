@@ -14,14 +14,14 @@ export function Home() {
                 <span className="gradient-text font-[450] text-5xl md:text-7xl xl:text-8xl block">
                   LiquidOS:
                 </span>
-                <span className="text-3xl md:text-4xl xl:text-5xl text-primary font-[450] leading-tight tracking-[-0.02em] block">
+                <span className="text-3xl md:text-4xl xl:text-5xl text-gray-600 dark:text-gray-300 font-[450] leading-tight tracking-[-0.02em] block">
                   The AI Agent That
                   <br />
                   Evolves on Its Own
                 </span>
               </h1>
-              <p className="text-base md:text-lg text-muted-foreground max-w-[90%] md:max-w-[85%]">
-                An intelligent system that adapts, grows, and evolves with knowledge—entirely on its own. 
+              <p className="text-base md:text-lg text-muted-foreground">
+                An intelligent system that adapts, grows, and evolves with knowledge—entirely on its own.
                 Welcome to the next era of AI.
               </p>
             </div>
