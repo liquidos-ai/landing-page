@@ -3,7 +3,6 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import { Corty } from "./pages/corty";
 import HomePage from "./pages/Home";
 import Footer from "./components/Footer";
 
@@ -39,16 +38,6 @@ function App() {
                 <>
                   <Header />
                   <Contact />
-                  <Footer />
-                </>
-              }
-            />
-            <Route
-              path="/corty"
-              element={
-                <>
-                  <Header />
-                  <Corty />
                   <Footer />
                 </>
               }

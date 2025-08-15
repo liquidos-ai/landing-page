@@ -17,8 +17,8 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
               We'd love to hear from you. Whether you're interested in our
-              platform, have questions, or want to explore partnerships, we're
-              here to help.
+              infrastructure, have questions, or want to explore partnerships for
+              the agentic future, we're here to help.
             </p>
           </div>
         </section>
@@ -37,8 +37,8 @@ const Contact = () => {
                   Ready to connect?
                 </h3>
                 <p className="text-gray-400 mb-8 leading-relaxed">
-                  For all inquiries, partnerships, early access requests, or
-                  general questions, reach out to us directly. We typically
+                  For all inquiries, partnerships, AutoAgents questions, or
+                  discussions about our infrastructure, reach out to us directly. We typically
                   respond within 24 hours.
                 </p>
 
@@ -50,10 +50,10 @@ const Contact = () => {
                     </span>
                   </div>
                   <a
-                    href="mailto:support@corty.dev"
+                    href="mailto:saivishwak40@gmail.com"
                     className="text-2xl font-bold text-red-400 hover:text-red-300 transition-colors font-space"
                   >
-                    support@liquidos.ai
+                    saivishwak40@gmail.com
                   </a>
                   <p className="text-gray-400 text-sm mt-2">
                     We'll get back to you as soon as possible
@@ -62,7 +62,7 @@ const Contact = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:support@liquidos.ai"
+                    href="mailto:saivishwak40@gmail.com"
                     className="btn-primary font-space"
                   >
                     Send us an Email
@@ -91,38 +91,38 @@ const Contact = () => {
             <div className="space-y-6">
               <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800/50">
                 <h3 className="text-lg font-bold text-white mb-3 font-space">
-                  When will Corty be available?
+                  When will LiquidOS be available?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We're currently in development and building towards our
-                  initial release. Contact us at support@liquidos.ai to join our
-                  early access program and be among the first to experience our
-                  AI-powered code intelligence platform.
+                  We're currently building the foundational infrastructure and 
+                  actively developing our core systems. AutoAgents is available now 
+                  as open source. Contact us to discuss 
+                  partnerships and early access to our infrastructure platform.
                 </p>
               </div>
 
               <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800/50">
                 <h3 className="text-lg font-bold text-white mb-3 font-space">
-                  What makes Corty different from existing tools?
+                  What makes LiquidOS different from existing AI frameworks?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Corty combines symbolic AI, RAG-powered search, and agentic
-                  capabilities to provide true code intelligence that
-                  understands context, relationships, and organizational
-                  knowledge across distributed repositories and enterprise
-                  environments.
+                  We're not building another AI framework. LiquidOS provides the 
+                  foundational infrastructure for true hybrid intelligence - 
+                  enabling AI agents to seamlessly flow between edge, cloud, and 
+                  any environment. Built in Rust for mission-critical reliability.
                 </p>
               </div>
 
               <div className="bg-gray-900/50 rounded-2xl p-6 border border-gray-800/50">
                 <h3 className="text-lg font-bold text-white mb-3 font-space">
-                  Do you offer enterprise solutions?
+                  Do you work with robotics and healthcare companies?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Yes, we're building Corty with enterprise needs in mind,
-                  including on-premise deployment, data sovereignty, security
-                  compliance, and integration with existing development
-                  workflows. Contact us to discuss your specific requirements.
+                  Absolutely. Our infrastructure is designed for mission-critical 
+                  systems including surgical robots, autonomous vehicles, and 
+                  industrial automation. We provide the reliable, safety-first 
+                  foundation that these industries require. Contact us to discuss 
+                  your specific use case.
                 </p>
               </div>
             </div>

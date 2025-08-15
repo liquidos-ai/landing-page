@@ -14,9 +14,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-400 mb-6 max-w-lg leading-relaxed text-sm">
-              Revolutionizing software development with AI-powered code
-              intelligence. Helping teams understand, navigate, and collaborate
-              on complex codebases faster than ever before.
+              Building the foundational infrastructure for the agentic future.
+              Empowering robotics, healthcare, edge AI, and beyond with seamless
+              hybrid intelligence that works everywhere.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center space-x-4 mt-3 md:mt-0">
             <span className="text-gray-400 text-sm">
-              Made with ❤️ for developers
+              Built in Rust for the agentic future
             </span>
           </div>
         </div>

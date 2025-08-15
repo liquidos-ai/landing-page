@@ -1,4 +1,4 @@
-import { Users, Target, Zap, Globe } from "lucide-react";
+import { Users, Target, Zap, Globe, Linkedin } from "lucide-react";
 import profile from "../../assets/proile.jpg";
 import { Link } from "react-router-dom";
 
@@ -6,27 +6,27 @@ const About = () => {
   const values = [
     {
       icon: Users,
-      title: "Developer-First",
+      title: "Infrastructure-First",
       description:
-        "We build for developers, by developers. Every feature is designed to enhance the developer experience.",
+        "We build foundational systems that enable others to create amazing intelligent applications without the complexity.",
     },
     {
       icon: Target,
-      title: "Innovation",
+      title: "Reliability",
       description:
-        "We push the boundaries of what's possible with AI and code intelligence to solve real problems.",
+        "When your surgical robot or autonomous vehicle depends on it, failure is not an option. We build for mission-critical systems.",
     },
     {
       icon: Zap,
       title: "Performance",
       description:
-        "Speed and reliability are at the core of everything we build. Your time is valuable.",
+        "Built in Rust for memory safety and zero-cost abstractions. Performance and safety are non-negotiable.",
     },
     {
       icon: Globe,
-      title: "Global Impact",
+      title: "Ambient Intelligence",
       description:
-        "We're building tools that help development teams worldwide create better software faster.",
+        "Making AI as ubiquitous and reliable as electricity - seamlessly flowing between edge, cloud, and everything in between.",
     },
   ];
 
@@ -34,7 +34,7 @@ const About = () => {
     {
       name: "Sai Vishwak Korimerla",
       role: "Founder",
-      bio: "Passionate AI enthusiast",
+      bio: "Building the infrastructure for tomorrow's intelligent systems",
       avatar:
         "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
     },
@@ -55,8 +55,8 @@ const About = () => {
               About
             </h1>
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-              We're on a mission to make every developer more productive by
-              bringing AI-powered intelligence to every line of code.
+              We're building the foundational infrastructure that will power the
+              next generation of intelligent systems across robotics, healthcare, and edge AI.
             </p>
           </div>
         </section>
@@ -69,24 +69,21 @@ const About = () => {
             </h2>
             <div className="prose prose-lg prose-invert">
               <p className="text-gray-300 leading-relaxed mb-6">
-                Corty was born from a simple observation: developers spend too
-                much time searching for and understanding code. Whether
-                onboarding to a new codebase, debugging complex issues, or
-                trying to understand legacy systems, the tools available were
-                fragmented and inefficient.
+                LiquidOS was born from a simple observation: AI systems today are a mess. 
+                Cloud AI fails when internet goes down, edge computing can't handle complex models, 
+                and "hybrid" solutions are just two separate systems pretending to work together. 
+                The infrastructure was fragmented and unreliable.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Our founders, having experienced these pain points firsthand at
-                big tech companies and leading development organizations,
-                decided to build the code intelligence platform they wished they
-                had. Combining cutting-edge AI with deep understanding of
-                developer workflows, Corty is emerging as the first AI-native
-                code intelligence platform.
+                Our team, having experienced these challenges firsthand in robotics, healthcare, 
+                and edge computing environments, decided to build the agentic infrastructure 
+                they wished existed. We're creating the foundational building blocks that enable 
+                AI agents to work seamlessly across any environment - from your laptop to the cloud to edge devices.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                We're building something that will help engineering teams at
-                organizations of all sizes navigate complex codebases,
-                accelerate development, and build better software faster.
+                We're not building another AI framework. We're building the plumbing - the critical 
+                infrastructure that makes intelligent systems actually useful in the real world, 
+                whether that's surgical robots, autonomous vehicles, or smart factories.
               </p>
             </div>
           </div>
@@ -130,7 +127,7 @@ const About = () => {
                 Meet the Team
               </h2>
               <p className="text-lg text-gray-400">
-                The person building the future of code intelligence
+                The person building the foundational infrastructure for intelligent systems
               </p>
             </div>
 
@@ -144,10 +141,19 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-white mb-2 font-space">
                   {team[0].name}
                 </h3>
-                <p className="text-red-400 text-lg mb-4 font-medium">
+                <p className="text-red-400 text-lg mb-2 font-medium">
                   {team[0].role}
                 </p>
-                <p className="text-gray-400 leading-relaxed">{team[0].bio}</p>
+                <a
+                  href="https://www.linkedin.com/in/sai-vishwak-korimerla/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center p-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+                >
+                  <Linkedin className="w-4 h-4" />
+                </a>
+
+                <p className="text-gray-400 leading-relaxed mt-2 mb-4">{team[0].bio}</p>
               </div>
             </div>
           </div>
@@ -164,18 +170,12 @@ const About = () => {
                 </h3>
                 <p className="text-gray-400 mb-6">
                   We're always looking for talented individuals who share our
-                  passion for developer tools and AI innovation.
+                  passion for building foundational infrastructure and advancing the agentic future.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to="/contact" className="btn-primary font-space">
                     Get in Touch
                   </Link>
-                  <a
-                    href="mailto:support@corty.dev"
-                    className="btn-secondary font-space"
-                  >
-                    Contact Us
-                  </a>
                 </div>
               </div>
             </div>

@@ -29,8 +29,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="text-xl font-bold text-white font-space">
-              LiquidOS
+            <a href="/" className="flex items-center gap-3">
+              <img src="/assets/logo.svg" alt="LiquidOS" className="w-8 h-8" />
+              <span className="text-xl font-bold text-white font-space">
+                LiquidOS
+              </span>
             </a>
           </div>
 
@@ -48,13 +51,6 @@ const Header = () => {
               </button>
               {isProductsOpen && (
                 <div className="absolute top-full mt-2 w-48 bg-black/90 backdrop-blur-xl border border-gray-800 rounded-lg shadow-xl py-2">
-                  <Link
-                    to="/corty"
-                    className="block px-4 py-2 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-colors"
-                    onClick={() => setIsProductsOpen(false)}
-                  >
-                    Corty
-                  </Link>
                   <a
                     href="https://github.com/liquidos-ai/AutoAgents"
                     target="_blank"
@@ -111,18 +107,9 @@ const Header = () => {
                 </button>
                 {isProductsOpen && (
                   <div className="ml-4 mt-2">
-                    <Link
-                      to="/corty"
-                      className="block py-2 text-gray-300 hover:text-white transition-colors"
-                      onClick={() => {
-                        setIsMenuOpen(false);
-                        setIsProductsOpen(false);
-                      }}
-                    >
-                      Corty
-                    </Link>
-                    <Link
-                      to="/autoagents"
+                    <a
+                      href="https://github.com/liquidos-ai/AutoAgents"
+                      target="_blank"
                       className="block py-2 text-gray-300 hover:text-white transition-colors"
                       onClick={() => {
                         setIsMenuOpen(false);
@@ -130,7 +117,7 @@ const Header = () => {
                       }}
                     >
                       AutoAgents
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>

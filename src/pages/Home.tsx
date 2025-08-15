@@ -23,27 +23,26 @@ const HomePage = () => {
               {/* Badge */}
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 text-red-400 text-sm font-medium mb-8 animate-float">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
-                Built in Rust for unmatched performance
+                FOSS - Fully Open Source Stack
               </div>
 
               {/* Main heading */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 font-space">
-                The AI Platform for
+                Building Blocks for the
                 <br />
                 <span className="gradient-text text-glow">
-                  Building Tomorrow
+                  Agentic Future
                 </span>
               </h1>
 
               {/* Subheading */}
-              <p className="text-lg sm:text-xl lg:text-2xl text-gray-400 mb-4 font-space font-medium">
-                Performance. Intelligence. Evolution.
+              <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-4 font-space font-medium">
+                The future stack to empower robotics, healthcare, edge AI, and beyond.
               </p>
-              <p className="text-base lg:text-lg text-gray-500 mb-16 max-w-3xl leading-relaxed">
-                LiquidOS is the cutting-edge AI tech stack that powers the next
-                generation of intelligent systems. Built from the ground up in
-                Rust, we deliver unparalleled performance and reliability for
-                enterprises pushing the frontiers of artificial intelligence.
+              <p className="text-base lg:text-lg text-gray-300 mb-16 max-w-3xl leading-relaxed">
+                LiquidOS provides the foundational infrastructure for the next generation of intelligent systems. 
+                We're solving the AI deployment mess with building blocks that let agents work seamlessly across 
+                any environment - from your laptop to the cloud to edge devices.
               </p>
             </div>
 
@@ -53,25 +52,25 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Performance Stats */}
+          {/* Key Benefits */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2 font-space">
-                100x
+                Edge + Cloud
               </div>
-              <div className="text-sm text-gray-400">Faster processing</div>
+              <div className="text-sm text-gray-400">True hybrid deployment</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2 font-space">
                 <span className="text-orange-500">🦀</span> Rust
               </div>
-              <div className="text-sm text-gray-400">Powered performance</div>
+              <div className="text-sm text-gray-400">Unmatched safety and performance</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2 font-space">
-                Zero
+                Ambient
               </div>
-              <div className="text-sm text-gray-400">Runtime overhead</div>
+              <div className="text-sm text-gray-400">Intelligence everywhere</div>
             </div>
           </div>
         </div>
@@ -126,15 +125,15 @@ const HomePage = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 font-space">
-              Why LiquidOS?
+              Why This Matters
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              A revolutionary AI platform that combines the speed of Rust with
-              cutting-edge AI capabilities
+              Everyone's excited about AI, but the infrastructure is held together with duct tape.
+              Here's what's broken and how we're fixing it.
             </p>
           </div>
 
-          {/* Features Grid */}
+          {/* Problems Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="group relative bg-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-800/50 hover:border-gray-700/50 transition-all duration-500 hover:transform hover:scale-105">
               <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500" />
@@ -145,12 +144,12 @@ const HomePage = () => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3 font-space">
-                  Rust-Powered Core
+                  Cloud Dependency
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Built entirely in Rust for memory safety, blazing performance,
-                  and zero-cost abstractions in AI workloads.
+                  Cloud AI is great until your internet goes down, you have sensitive data, 
+                  or milliseconds of latency actually matter.
                 </p>
               </div>
             </div>
@@ -164,12 +163,12 @@ const HomePage = () => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3 font-space">
-                  AI-First Architecture
+                  Edge Limitations
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Purpose-built for AI workloads with native support for LLMs,
-                  embeddings, and distributed computing.
+                  Edge computing sounds cool, but try running GPT-4 on a Raspberry Pi. 
+                  Good luck with that.
                 </p>
               </div>
             </div>
@@ -183,12 +182,12 @@ const HomePage = () => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3 font-space">
-                  Enterprise Ready
+                  Fake Hybrid
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Production-grade reliability with built-in security, audit
-                  trails, and compliance features.
+                  "Hybrid" solutions are usually just two separate systems pretending 
+                  to talk to each other. It's a nightmare to maintain.
                 </p>
               </div>
             </div>
@@ -202,12 +201,12 @@ const HomePage = () => {
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-3 font-space">
-                  Developer Experience
+                  Security Trade-offs
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Intuitive APIs, comprehensive SDKs, and tools that make
-                  building AI applications a breeze.
+                  Most companies end up choosing between "powerful AI" and "keeping 
+                  our data safe." Why should you have to pick?
                 </p>
               </div>
             </div>
@@ -215,7 +214,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Products Section */}
+      {/* Solution Section */}
       <section className="py-20 bg-black relative">
         {/* Background effects */}
         <div className="absolute inset-0">
@@ -225,89 +224,151 @@ const HomePage = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 font-space">
-              Products from our team
+              Our Solution: True Hybrid Intelligence
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Discover the powerful products and solutions powered by our AI
-              platform
+              What if AI could seamlessly flow between environments? Not forced deployment choices, 
+              but intelligent distribution based on need. Welcome to Ambient Intelligence.
             </p>
           </div>
 
-          {/* Product Cards */}
-          <div className="max-w-4xl mx-auto space-y-6">
-            {/* Corty Feature Card */}
+          {/* Solution Cards */}
+          <div className="max-w-5xl mx-auto space-y-8">
+            {/* Actually Hybrid Card */}
             <div className="relative bg-gradient-to-r from-red-900/15 via-pink-900/15 to-violet-900/15 rounded-3xl p-10 border border-red-500/20 backdrop-blur-sm hover:border-red-500/40 transition-all duration-300">
               <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-violet-500/5 rounded-3xl" />
               <div className="relative">
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-6">
                   <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🧠</span>
+                    <span className="text-2xl">🌐</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white font-space">
-                    Corty
+                    Actually Hybrid (Not Just Marketing Speak)
                   </h3>
                 </div>
-                <p className="text-gray-400 mb-6 text-lg">
-                  Our flagship AI-native code intelligence platform. Index,
-                  understand, and collaborate on complex codebases with the
-                  power of symbolic AI, RAG, and agentic capabilities.
+                <p className="text-gray-400 mb-4 text-lg leading-relaxed">
+                  Need faster response? Deploy one of your agents on edge closer to the data. Lost internet connection? 
+                  They keep working locally. It just works.
                 </p>
-                <Link
-                  to="/corty"
-                  className="inline-flex items-center text-red-400 hover:text-red-300 font-semibold transition-colors"
-                >
-                  Learn more about Corty
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            {/* AutoAgents Feature Card */}
-            <div className="relative bg-gradient-to-r from-red-900/15 via-pink-900/15 to-violet-900/15 rounded-3xl p-10 border border-red-500/20 backdrop-blur-sm hover:border-red-500/40 transition-all duration-300">
-              <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 to-violet-500/5 rounded-3xl" />
-              <div className="relative">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-violet-500 rounded-xl flex items-center justify-center">
-                    <span className="text-2xl">🤖</span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-white font-space">
-                    AutoAgents
-                  </h3>
-                  <div className="px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-full">
-                    <span className="text-xs text-green-400 font-semibold">
-                      OPEN SOURCE
-                    </span>
-                  </div>
-                </div>
-                <p className="text-gray-400 mb-6 text-lg">
-                  A powerful, fully open-source AI agent library built in Rust.
-                  Create autonomous agents that can reason, plan, and execute
-                  complex tasks with blazing performance and memory safety.
+                <p className="text-gray-400 text-lg leading-relaxed">
+                  You need powerful AI models or Physics Simulations to run? No worries, Deploy the Agent on the cloud 
+                  and Edge Intelligence can connect to the cloud with Hybrid architecture.
                 </p>
-                <a
-                  href="https://github.com/liquidos-ai/AutoAgents"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-red-400 hover:text-red-300 font-semibold transition-colors"
-                >
-                  View on GitHub
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
               </div>
             </div>
           </div>
+          </div>
+      </section>
 
-          <div className="mt-12 text-center">
-            <p className="text-gray-500 text-sm mb-4">
-              Explore the frontier of AI with us
+      {/* Open Source Section */}
+      <section className="py-20 bg-black relative">
+        {/* Background effects */}
+        <div className="absolute inset-0">
+          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-600/8 to-pink-600/8 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-l from-red-600/8 to-violet-600/8 rounded-full blur-3xl" />
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 font-space">
+              Open Source Innovation
+            </h2>
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto">
+              Experience our technology firsthand. We believe in open innovation 
+              and building the future together with the developer community.
             </p>
-            <div className="flex justify-center gap-2">
-              <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
-              <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
-              <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
+          </div>
+
+          {/* AutoAgents Card */}
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-gray-900/30 backdrop-blur-sm rounded-3xl p-10 border border-gray-800/50 hover:border-gray-700/50 transition-all duration-500 hover:transform hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-violet-500/5 via-red-500/5 to-pink-500/5 opacity-0 hover:opacity-100 rounded-3xl transition-opacity duration-500" />
+              <div className="relative">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-violet-500 to-red-500 rounded-xl flex items-center justify-center shadow-lg shadow-violet-500/25">
+                    <span className="text-3xl">🤖</span>
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-white font-space">
+                      AutoAgents
+                    </h3>
+                    <div className="flex items-center gap-2 mt-2">
+                      <div className="px-3 py-1 bg-violet-500/15 border border-violet-500/30 rounded-full">
+                        <span className="text-xs text-violet-300 font-semibold">
+                          OPEN SOURCE
+                        </span>
+                      </div>
+                      <div className="px-3 py-1 bg-orange-500/15 border border-orange-500/30 rounded-full">
+                        <span className="text-xs text-orange-300 font-semibold">
+                          RUST POWERED
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                      A powerful, production-ready AI agent library that showcases the capabilities 
+                      of our LiquidOS building blocks. Built entirely in Rust for maximum performance and safety.
+                    </p>
+                    <ul className="space-y-2 text-gray-400">
+                      <li>• Autonomous reasoning and decision making</li>
+                      <li>• Multi-agent coordination and communication</li>
+                      <li>• Memory-safe execution environment</li>
+                      <li>• Blazing-fast performance on any hardware</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                      Start building the future today. AutoAgents demonstrates how our infrastructure 
+                      enables developers to create sophisticated AI systems without the complexity.
+                    </p>
+                    <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700/50">
+                      <code className="text-green-400 text-sm">
+                        cargo add autoagents<br/>
+                        // Start building intelligent agents<br/>
+                        // with production-ready infrastructure
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://github.com/liquidos-ai/AutoAgents"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105"
+                  >
+                    <span className="mr-2 text-yellow-400">⭐</span>
+                    Star on GitHub
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                  <a
+                    href="https://liquidos-ai.github.io/AutoAgents/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-6 py-3 border border-gray-700 hover:border-violet-500/50 text-gray-300 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:bg-violet-500/10"
+                  >
+                    Quick Start Guide
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <div className="mt-16 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4 font-space">The Bottom Line</h3>
+            <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed">
+              We're not building another AI framework. We're building the infrastructure - 
+              the foundational building blocks that make intelligent systems actually work in the real world.
+            </p>
+          </div>
+
       </section>
     </main>
   );
