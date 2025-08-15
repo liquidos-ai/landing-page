@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center gap-3">
-              <img src="/assets/logo.svg" alt="LiquidOS" className="w-8 h-8" />
+              <img src={logo} alt="LiquidOS" className="w-8 h-8" />
               <span className="text-xl font-bold text-white font-space">
                 LiquidOS
               </span>
