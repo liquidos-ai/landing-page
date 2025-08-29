@@ -20,6 +20,21 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
+              {/* Product Hunt Badge */}
+              <div className="mb-6">
+                <a
+                  href="https://www.producthunt.com/products/autoagents?utm_source=badge-featured&utm_medium=badge"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1005769&theme=light"
+                    alt="AutoAgents - Empowering the Next Wave of Hybrid & Edge AI Agents | Product Hunt"
+                    width="250"
+                    height="54"
+                  />
+                </a>
+              </div>
+
               {/* Badge */}
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 text-red-400 text-sm font-medium mb-8 animate-float">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
@@ -30,19 +45,20 @@ const HomePage = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6 font-space">
                 Building Blocks for the
                 <br />
-                <span className="gradient-text text-glow">
-                  Agentic Future
-                </span>
+                <span className="gradient-text text-glow">Agentic Future</span>
               </h1>
 
               {/* Subheading */}
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-4 font-space font-medium">
-                The future stack to empower robotics, healthcare, edge AI, and beyond.
+                The future stack to empower robotics, healthcare, edge AI, and
+                beyond.
               </p>
               <p className="text-base lg:text-lg text-gray-300 mb-16 max-w-3xl leading-relaxed">
-                LiquidOS provides the foundational infrastructure for the next generation of intelligent systems. 
-                We're solving the AI deployment mess with building blocks that let agents work seamlessly across 
-                any environment - from your laptop to the cloud to edge devices.
+                LiquidOS provides the foundational infrastructure for the next
+                generation of intelligent systems. We're solving the AI
+                deployment mess with building blocks that let agents work
+                seamlessly across any environment - from your laptop to the
+                cloud to edge devices.
               </p>
             </div>
 
@@ -58,19 +74,25 @@ const HomePage = () => {
               <div className="text-3xl font-bold text-white mb-2 font-space">
                 Edge + Cloud
               </div>
-              <div className="text-sm text-gray-400">True hybrid deployment</div>
+              <div className="text-sm text-gray-400">
+                True hybrid deployment
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2 font-space">
                 <span className="text-orange-500">🦀</span> Rust
               </div>
-              <div className="text-sm text-gray-400">Unmatched safety and performance</div>
+              <div className="text-sm text-gray-400">
+                Unmatched safety and performance
+              </div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white mb-2 font-space">
                 Ambient
               </div>
-              <div className="text-sm text-gray-400">Intelligence everywhere</div>
+              <div className="text-sm text-gray-400">
+                Intelligence everywhere
+              </div>
             </div>
           </div>
         </div>
@@ -128,8 +150,9 @@ const HomePage = () => {
               Why This Matters
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Everyone's excited about AI, but the infrastructure is held together with duct tape.
-              Here's what's broken and how we're fixing it.
+              Everyone's excited about AI, but the infrastructure is held
+              together with duct tape. Here's what's broken and how we're fixing
+              it.
             </p>
           </div>
 
@@ -148,8 +171,8 @@ const HomePage = () => {
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Cloud AI is great until your internet goes down, you have sensitive data, 
-                  or milliseconds of latency actually matter.
+                  Cloud AI is great until your internet goes down, you have
+                  sensitive data, or milliseconds of latency actually matter.
                 </p>
               </div>
             </div>
@@ -167,8 +190,8 @@ const HomePage = () => {
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Edge computing sounds cool, but try running GPT-4 on a Raspberry Pi. 
-                  Good luck with that.
+                  Edge computing sounds cool, but try running GPT-4 on a
+                  Raspberry Pi. Good luck with that.
                 </p>
               </div>
             </div>
@@ -186,8 +209,9 @@ const HomePage = () => {
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  "Hybrid" solutions are usually just two separate systems pretending 
-                  to talk to each other. It's a nightmare to maintain.
+                  "Hybrid" solutions are usually just two separate systems
+                  pretending to talk to each other. It's a nightmare to
+                  maintain.
                 </p>
               </div>
             </div>
@@ -205,8 +229,8 @@ const HomePage = () => {
                 </h3>
 
                 <p className="text-gray-400 leading-relaxed">
-                  Most companies end up choosing between "powerful AI" and "keeping 
-                  our data safe." Why should you have to pick?
+                  Most companies end up choosing between "powerful AI" and
+                  "keeping our data safe." Why should you have to pick?
                 </p>
               </div>
             </div>
@@ -227,8 +251,9 @@ const HomePage = () => {
               Our Solution: True Hybrid Intelligence
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              What if AI could seamlessly flow between environments? Not forced deployment choices, 
-              but intelligent distribution based on need. Welcome to Ambient Intelligence.
+              What if AI could seamlessly flow between environments? Not forced
+              deployment choices, but intelligent distribution based on need.
+              Welcome to Ambient Intelligence.
             </p>
           </div>
 
@@ -247,17 +272,19 @@ const HomePage = () => {
                   </h3>
                 </div>
                 <p className="text-gray-400 mb-4 text-lg leading-relaxed">
-                  Need faster response? Deploy one of your agents on edge closer to the data. Lost internet connection? 
-                  They keep working locally. It just works.
+                  Need faster response? Deploy one of your agents on edge closer
+                  to the data. Lost internet connection? They keep working
+                  locally. It just works.
                 </p>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  You need powerful AI models or Physics Simulations to run? No worries, Deploy the Agent on the cloud 
-                  and Edge Intelligence can connect to the cloud with Hybrid architecture.
+                  You need powerful AI models or Physics Simulations to run? No
+                  worries, Deploy the Agent on the cloud and Edge Intelligence
+                  can connect to the cloud with Hybrid architecture.
                 </p>
               </div>
             </div>
           </div>
-          </div>
+        </div>
       </section>
 
       {/* Open Source Section */}
@@ -274,7 +301,7 @@ const HomePage = () => {
               Open Source Innovation
             </h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Experience our technology firsthand. We believe in open innovation 
+              Experience our technology firsthand. We believe in open innovation
               and building the future together with the developer community.
             </p>
           </div>
@@ -306,12 +333,14 @@ const HomePage = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                      A powerful, production-ready AI agent library that showcases the capabilities 
-                      of our LiquidOS building blocks. Built entirely in Rust for maximum performance and safety.
+                      A powerful, production-ready AI agent library that
+                      showcases the capabilities of our LiquidOS building
+                      blocks. Built entirely in Rust for maximum performance and
+                      safety.
                     </p>
                     <ul className="space-y-2 text-gray-400">
                       <li>• Autonomous reasoning and decision making</li>
@@ -322,13 +351,16 @@ const HomePage = () => {
                   </div>
                   <div>
                     <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                      Start building the future today. AutoAgents demonstrates how our infrastructure 
-                      enables developers to create sophisticated AI systems without the complexity.
+                      Start building the future today. AutoAgents demonstrates
+                      how our infrastructure enables developers to create
+                      sophisticated AI systems without the complexity.
                     </p>
                     <div className="bg-gray-900/50 backdrop-blur-sm rounded-lg p-4 border border-gray-700/50">
                       <code className="text-green-400 text-sm">
-                        cargo add autoagents<br/>
-                        // Start building intelligent agents<br/>
+                        cargo add autoagents
+                        <br />
+                        // Start building intelligent agents
+                        <br />
                         // with production-ready infrastructure
                       </code>
                     </div>
@@ -362,13 +394,15 @@ const HomePage = () => {
         </div>
 
         <div className="mt-16 text-center">
-            <h3 className="text-2xl font-bold text-white mb-4 font-space">The Bottom Line</h3>
-            <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed">
-              We're not building another AI framework. We're building the infrastructure - 
-              the foundational building blocks that make intelligent systems actually work in the real world.
-            </p>
-          </div>
-
+          <h3 className="text-2xl font-bold text-white mb-4 font-space">
+            The Bottom Line
+          </h3>
+          <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed">
+            We're not building another AI framework. We're building the
+            infrastructure - the foundational building blocks that make
+            intelligent systems actually work in the real world.
+          </p>
+        </div>
       </section>
     </main>
   );
