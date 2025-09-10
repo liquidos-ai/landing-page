@@ -50,10 +50,10 @@ const Contact = () => {
                     </span>
                   </div>
                   <a
-                    href="mailto:saivishwak40@gmail.com"
+                    href="mailto:vishwak@liquidos.ai"
                     className="text-2xl font-bold text-red-400 hover:text-red-300 transition-colors font-space"
                   >
-                    saivishwak40@gmail.com
+                    vishwak@liquidos.ai
                   </a>
                   <p className="text-gray-400 text-sm mt-2">
                     We'll get back to you as soon as possible
@@ -62,7 +62,7 @@ const Contact = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
-                    href="mailto:saivishwak40@gmail.com"
+                    href="mailto:vishwak@liquidos.ai"
                     className="btn-primary font-space"
                   >
                     Send us an Email
