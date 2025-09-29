@@ -17,8 +17,8 @@ const Contact = () => {
             </h1>
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
               We'd love to hear from you. Whether you're interested in our
-              infrastructure, have questions, or want to explore partnerships for
-              the agentic future, we're here to help.
+              infrastructure, have questions, or want to explore partnerships
+              for the agentic future, we're here to help.
             </p>
           </div>
         </section>
@@ -37,9 +37,8 @@ const Contact = () => {
                   Ready to connect?
                 </h3>
                 <p className="text-gray-400 mb-8 leading-relaxed">
-                  For all inquiries, partnerships, AutoAgents questions, or
-                  discussions about our infrastructure, reach out to us directly. We typically
-                  respond within 24 hours.
+                  For all inquiries, AutoAgents questions, reach out to us
+                  directly.
                 </p>
 
                 <div className="bg-gray-900/50 rounded-2xl p-8 border border-gray-800/50 mb-8">
@@ -94,10 +93,9 @@ const Contact = () => {
                   When will LiquidOS be available?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We're currently building the foundational infrastructure and 
-                  actively developing our core systems. AutoAgents is available now 
-                  as open source. Contact us to discuss 
-                  partnerships and early access to our infrastructure platform.
+                  We're currently building the foundational infrastructure and
+                  actively developing our core systems. AutoAgents is available
+                  now as open source.
                 </p>
               </div>
 
@@ -106,10 +104,11 @@ const Contact = () => {
                   What makes LiquidOS different from existing AI frameworks?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  We're not building another AI framework. LiquidOS provides the 
-                  foundational infrastructure for true hybrid intelligence - 
-                  enabling AI agents to seamlessly flow between edge, cloud, and 
-                  any environment. Built in Rust for mission-critical reliability.
+                  We're not building another AI framework. LiquidOS provides the
+                  foundational infrastructure for true hybrid intelligence -
+                  enabling AI agents to seamlessly flow between edge, cloud, and
+                  any environment. Built in Rust for mission-critical
+                  reliability.
                 </p>
               </div>
 
@@ -118,11 +117,11 @@ const Contact = () => {
                   Do you work with robotics and healthcare companies?
                 </h3>
                 <p className="text-gray-400 leading-relaxed">
-                  Absolutely. Our infrastructure is designed for mission-critical 
-                  systems including surgical robots, autonomous vehicles, and 
-                  industrial automation. We provide the reliable, safety-first 
-                  foundation that these industries require. Contact us to discuss 
-                  your specific use case.
+                  Absolutely. Our infrastructure is designed for
+                  mission-critical systems including surgical robots, autonomous
+                  vehicles, and industrial automation. We provide the reliable,
+                  safety-first foundation that these industries require. Contact
+                  us to discuss your specific use case.
                 </p>
               </div>
             </div>

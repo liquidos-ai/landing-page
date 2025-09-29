@@ -77,12 +77,12 @@ const About = () => {
                 infrastructure was fragmented and unreliable.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Our team, having experienced these challenges firsthand in
-                robotics, healthcare, and edge computing environments, decided
-                to build the agentic infrastructure they wished existed. We're
-                creating the foundational building blocks that enable AI agents
-                to work seamlessly across any environment - from your laptop to
-                the cloud to edge devices.
+                Having experienced these challenges firsthand in robotics,
+                healthcare, and edge computing environments, we decided to build
+                the agentic infrastructure they wished existed. We're creating
+                the foundational building blocks that enable AI agents to work
+                seamlessly across any environment - from your laptop to the
+                cloud to edge devices.
               </p>
               <p className="text-gray-300 leading-relaxed">
                 We're not building another AI framework. We're building the
