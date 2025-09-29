@@ -20,21 +20,6 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
-              {/* Product Hunt Badge */}
-              <div className="mb-6">
-                <a
-                  href="https://www.producthunt.com/products/autoagents?utm_source=badge-featured&utm_medium=badge"
-                  target="_blank"
-                >
-                  <img
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1005769&theme=light"
-                    alt="AutoAgents - Empowering the Next Wave of Hybrid & Edge AI Agents | Product Hunt"
-                    width="250"
-                    height="54"
-                  />
-                </a>
-              </div>
-
               {/* Badge */}
               <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-red-500/10 to-pink-500/10 border border-red-500/20 text-red-400 text-sm font-medium mb-8 animate-float">
                 <span className="w-2 h-2 bg-red-500 rounded-full mr-2 animate-pulse"></span>
