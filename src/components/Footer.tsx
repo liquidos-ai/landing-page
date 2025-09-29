@@ -48,9 +48,6 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-800/50 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-400 text-sm">
-            © 2025 LiquidOS. All rights reserved.
-          </div>
           <div className="flex items-center space-x-4 mt-3 md:mt-0">
             <span className="text-gray-400 text-sm">
               Built in Rust for the agentic future

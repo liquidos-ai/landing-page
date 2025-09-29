@@ -33,7 +33,7 @@ const About = () => {
   const team = [
     {
       name: "Sai Vishwak Korimerla",
-      role: "Founder",
+      role: "Creator",
       bio: "Building the infrastructure for tomorrow's intelligent systems",
       avatar:
         "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop&crop=face",
@@ -56,7 +56,8 @@ const About = () => {
             </h1>
             <p className="text-xl text-gray-400 mb-8 leading-relaxed">
               We're building the foundational infrastructure that will power the
-              next generation of intelligent systems across robotics, healthcare, and edge AI.
+              next generation of intelligent systems across robotics,
+              healthcare, and edge AI.
             </p>
           </div>
         </section>
@@ -69,21 +70,25 @@ const About = () => {
             </h2>
             <div className="prose prose-lg prose-invert">
               <p className="text-gray-300 leading-relaxed mb-6">
-                LiquidOS was born from a simple observation: AI systems today are a mess. 
-                Cloud AI fails when internet goes down, edge computing can't handle complex models, 
-                and "hybrid" solutions are just two separate systems pretending to work together. 
-                The infrastructure was fragmented and unreliable.
+                LiquidOS was born from a simple observation: AI systems today
+                are a mess. Cloud AI fails when internet goes down, edge
+                computing can't handle complex models, and "hybrid" solutions
+                are just two separate systems pretending to work together. The
+                infrastructure was fragmented and unreliable.
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-                Our team, having experienced these challenges firsthand in robotics, healthcare, 
-                and edge computing environments, decided to build the agentic infrastructure 
-                they wished existed. We're creating the foundational building blocks that enable 
-                AI agents to work seamlessly across any environment - from your laptop to the cloud to edge devices.
+                Our team, having experienced these challenges firsthand in
+                robotics, healthcare, and edge computing environments, decided
+                to build the agentic infrastructure they wished existed. We're
+                creating the foundational building blocks that enable AI agents
+                to work seamlessly across any environment - from your laptop to
+                the cloud to edge devices.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                We're not building another AI framework. We're building the plumbing - the critical 
-                infrastructure that makes intelligent systems actually useful in the real world, 
-                whether that's surgical robots, autonomous vehicles, or smart factories.
+                We're not building another AI framework. We're building the
+                plumbing - the critical infrastructure that makes intelligent
+                systems actually useful in the real world, whether that's
+                surgical robots, autonomous vehicles, or smart factories.
               </p>
             </div>
           </div>
@@ -127,7 +132,8 @@ const About = () => {
                 Meet the Team
               </h2>
               <p className="text-lg text-gray-400">
-                The person building the foundational infrastructure for intelligent systems
+                The person building the foundational infrastructure for
+                intelligent systems
               </p>
             </div>
 
@@ -153,7 +159,9 @@ const About = () => {
                   <Linkedin className="w-4 h-4" />
                 </a>
 
-                <p className="text-gray-400 leading-relaxed mt-2 mb-4">{team[0].bio}</p>
+                <p className="text-gray-400 leading-relaxed mt-2 mb-4">
+                  {team[0].bio}
+                </p>
               </div>
             </div>
           </div>
@@ -170,7 +178,8 @@ const About = () => {
                 </h3>
                 <p className="text-gray-400 mb-6">
                   We're always looking for talented individuals who share our
-                  passion for building foundational infrastructure and advancing the agentic future.
+                  passion for building foundational infrastructure and advancing
+                  the agentic future.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link to="/contact" className="btn-primary font-space">
