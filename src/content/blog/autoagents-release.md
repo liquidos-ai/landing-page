@@ -6,7 +6,7 @@ tag: "Open Source"
 readTime: "5 min"
 ---
 
-AutoAgents is Liquidos’ open-source Rust SDK for building reliable agentic systems. It’s designed for performance, safety, and scalability — and ships with the core building blocks you need to take agents from a demo to a deployable service.
+AutoAgents is LiquidOS’ open-source Rust SDK for building reliable agentic systems. It’s designed for performance, safety, and scalability — and ships with the core building blocks you need to take agents from a demo to a deployable service.
 
 ## What “production-ready” looks like
 
@@ -47,4 +47,4 @@ Once you have the minimal agent working, the next step is to harden the system a
   - Keep configuration externalized (keys, model selection, timeouts).
   - Start with clear boundaries (tools, providers, memory), then grow into richer orchestration as needed.
 
-AutoAgents is available today. Liquidos Platform is coming soon with additional operational layers (enterprise tracing, policy controls, evals, and deployment workflows) for teams running agents in regulated and mission-critical environments.
+AutoAgents is available today. LiquidOS Platform is coming soon with additional operational layers (enterprise tracing, policy controls, evals, and deployment workflows) for teams running agents in regulated and mission-critical environments.

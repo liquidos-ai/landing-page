@@ -3,29 +3,43 @@ import Layout from "../layouts/Layout.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort(
-	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 );
 ---
 
-<Layout title="Liquidos | Blog" description="Notes from building production-grade agent systems.">
-	<div class="space-y-8">
-		<div class="space-y-3">
-			<p class="pill">Blog</p>
-			<h1 class="text-4xl font-semibold text-heading">Liquidos Blog</h1>
-			<p class="max-w-2xl text-muted">Notes from building production-grade agent systems.</p>
-		</div>
+<Layout
+    title="LiquidOS | Blog"
+    description="Notes from building production-grade agent systems."
+>
+    <div class="space-y-8">
+        <div class="space-y-3">
+            <p class="pill">Blog</p>
+            <h1 class="text-4xl font-semibold text-heading">LiquidOS Blog</h1>
+            <p class="max-w-2xl text-muted">
+                Notes from building production-grade agent systems.
+            </p>
+        </div>
 
-		<div class="grid gap-6 md:grid-cols-2">
-			{posts.map((post) => (
-				<article class="paper rounded-2xl p-6">
-					<h2 class="mt-3 text-2xl font-semibold text-heading">{post.data.title}</h2>
-					<p class="mt-2 text-sm text-muted">{post.data.description}</p>
-					<a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted" href={`/blog/${post.slug}`}>
-						Read article
-						<span aria-hidden="true">→</span>
-					</a>
-				</article>
-			))}
-		</div>
-	</div>
+        <div class="grid gap-6 md:grid-cols-2">
+            {
+                posts.map((post) => (
+                    <article class="paper rounded-2xl p-6">
+                        <h2 class="mt-3 text-2xl font-semibold text-heading">
+                            {post.data.title}
+                        </h2>
+                        <p class="mt-2 text-sm text-muted">
+                            {post.data.description}
+                        </p>
+                        <a
+                            class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted"
+                            href={`/blog/${post.slug}`}
+                        >
+                            Read article
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                ))
+            }
+        </div>
+    </div>
 </Layout>

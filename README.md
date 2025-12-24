@@ -1,6 +1,6 @@
-# Liquidos Website
+# LiquidOS Website
 
-Marketing site for Liquidos and AutoAgents (Astro + Tailwind).
+Marketing site for LiquidOS and AutoAgents (Astro + Tailwind).
 
 ## Development
 

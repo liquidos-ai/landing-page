@@ -2,70 +2,133 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Liquidos | AutoAgents" description="AutoAgents — open-source Agent Runtime SDK in Rust for building high-performance, reliable multi-agent systems.">
-	<div class="space-y-10">
-		<div class="space-y-3">
-			<p class="pill">Products</p>
-			<h1 class="text-4xl font-semibold text-heading">AutoAgents — Open-Source Agent Runtime SDK</h1>
-			<p class="max-w-3xl text-muted">
-				AutoAgents is Liquidos’ open-source Rust SDK for building agentic systems with performance, portability, and production-minded primitives.
-			</p>
-			<div class="flex flex-wrap gap-3">
-				<a class="btn-primary" href="https://github.com/liquidos-ai/AutoAgents" target="_blank" rel="noreferrer">GitHub</a>
-				<a class="btn-ghost" href="https://liquidos-ai.github.io/AutoAgents/" target="_blank" rel="noreferrer">Docs</a>
-				<a class="btn-ghost" href="/#waitlist">Liquidos Platform waitlist</a>
-			</div>
-		</div>
+<Layout
+    title="LiquidOS | AutoAgents"
+    description="AutoAgents — open-source Agent Runtime SDK in Rust for building high-performance, reliable multi-agent systems."
+>
+    <div class="space-y-10">
+        <div class="space-y-3">
+            <p class="pill">Products</p>
+            <h1 class="text-4xl font-semibold text-heading">
+                AutoAgents — Open-Source Agent Runtime SDK
+            </h1>
+            <p class="max-w-3xl text-muted">
+                AutoAgents is LiquidOS’ open-source Rust SDK for building
+                agentic systems with performance, portability, and
+                production-minded primitives.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a
+                    class="btn-primary"
+                    href="https://github.com/liquidos-ai/AutoAgents"
+                    target="_blank"
+                    rel="noreferrer">GitHub</a
+                >
+                <a
+                    class="btn-ghost"
+                    href="https://liquidos-ai.github.io/AutoAgents/"
+                    target="_blank"
+                    rel="noreferrer">Docs</a
+                >
+                <a class="btn-ghost" href="/#waitlist"
+                    >LiquidOS Platform waitlist</a
+                >
+            </div>
+        </div>
 
-		<section class="grid gap-6 md:grid-cols-2">
-			<div class="paper rounded-2xl p-6">
-				<h2 class="text-xl font-semibold text-heading">Why AutoAgents?</h2>
-				<ul class="mt-3 space-y-2 text-muted">
-					<li>• Rust-native runtime for speed, safety, and predictability</li>
-					<li>• WASM sandboxing for portability and secure tool execution</li>
-					<li>• Structured outputs and primitives for production systems</li>
-					<li>• Provider-agnostic design for cloud and local models</li>
-				</ul>
-			</div>
-			<div class="paper rounded-2xl p-6">
-				<h2 class="text-xl font-semibold text-heading">Use Cases</h2>
-				<ul class="mt-3 space-y-2 text-muted">
-					<li>• Enterprise agents running on-prem or air-gapped</li>
-					<li>• Robotics and edge deployments needing low-latency control</li>
-					<li>• Research workflows requiring reproducibility and evaluation</li>
-					<li>• Multi-agent coordination with safety and auditability</li>
-				</ul>
-			</div>
-		</section>
+        <section class="grid gap-6 md:grid-cols-2">
+            <div class="paper rounded-2xl p-6">
+                <h2 class="text-xl font-semibold text-heading">
+                    Why AutoAgents?
+                </h2>
+                <ul class="mt-3 space-y-2 text-muted">
+                    <li>
+                        • Rust-native runtime for speed, safety, and
+                        predictability
+                    </li>
+                    <li>
+                        • WASM sandboxing for portability and secure tool
+                        execution
+                    </li>
+                    <li>
+                        • Structured outputs and primitives for production
+                        systems
+                    </li>
+                    <li>
+                        • Provider-agnostic design for cloud and local models
+                    </li>
+                </ul>
+            </div>
+            <div class="paper rounded-2xl p-6">
+                <h2 class="text-xl font-semibold text-heading">Use Cases</h2>
+                <ul class="mt-3 space-y-2 text-muted">
+                    <li>• Enterprise agents running on-prem or air-gapped</li>
+                    <li>
+                        • Robotics and edge deployments needing low-latency
+                        control
+                    </li>
+                    <li>
+                        • Research workflows requiring reproducibility and
+                        evaluation
+                    </li>
+                    <li>
+                        • Multi-agent coordination with safety and auditability
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-		<section class="grid gap-6 md:grid-cols-2">
-			<div class="paper rounded-2xl p-6">
-				<h3 class="text-lg font-semibold text-heading">Architecture</h3>
-				<ul class="mt-3 space-y-2 text-muted">
-					<li>• ReAct and executor-based agent design</li>
-					<li>• Modular memory backends</li>
-					<li>• Streaming and structured outputs (JSON schema)</li>
-					<li>• Deterministic control paths with policy enforcement</li>
-				</ul>
-			</div>
-			<div class="paper rounded-2xl p-6">
-				<h3 class="text-lg font-semibold text-heading">Feature Highlights</h3>
-				<ul class="mt-3 space-y-2 text-muted">
-					<li>• Tool execution via WASM for safety and portability</li>
-					<li>• Provider-agnostic LLM integrations (local + cloud)</li>
-					<li>• Observability hooks for tracing and metrics</li>
-					<li>• Ready for production hardening and RBAC integration</li>
-				</ul>
-			</div>
-		</section>
+        <section class="grid gap-6 md:grid-cols-2">
+            <div class="paper rounded-2xl p-6">
+                <h3 class="text-lg font-semibold text-heading">Architecture</h3>
+                <ul class="mt-3 space-y-2 text-muted">
+                    <li>• ReAct and executor-based agent design</li>
+                    <li>• Modular memory backends</li>
+                    <li>• Streaming and structured outputs (JSON schema)</li>
+                    <li>
+                        • Deterministic control paths with policy enforcement
+                    </li>
+                </ul>
+            </div>
+            <div class="paper rounded-2xl p-6">
+                <h3 class="text-lg font-semibold text-heading">
+                    Feature Highlights
+                </h3>
+                <ul class="mt-3 space-y-2 text-muted">
+                    <li>
+                        • Tool execution via WASM for safety and portability
+                    </li>
+                    <li>
+                        • Provider-agnostic LLM integrations (local + cloud)
+                    </li>
+                    <li>• Observability hooks for tracing and metrics</li>
+                    <li>
+                        • Ready for production hardening and RBAC integration
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-		<section class="rounded-2xl border border-subtle bg-card-surface p-8">
-			<h3 class="text-2xl font-semibold text-heading">Get started</h3>
-			<p class="mt-3 text-muted">Read the docs, clone the repo, and build your first Rust-based agent system.</p>
-			<div class="mt-4 flex flex-wrap gap-3">
-				<a class="btn-primary" href="https://github.com/liquidos-ai/AutoAgents" target="_blank" rel="noreferrer">View on GitHub</a>
-				<a class="btn-ghost" href="https://liquidos-ai.github.io/AutoAgents/" target="_blank" rel="noreferrer">Open docs</a>
-			</div>
-		</section>
-	</div>
+        <section class="rounded-2xl border border-subtle bg-card-surface p-8">
+            <h3 class="text-2xl font-semibold text-heading">Get started</h3>
+            <p class="mt-3 text-muted">
+                Read the docs, clone the repo, and build your first Rust-based
+                agent system.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-3">
+                <a
+                    class="btn-primary"
+                    href="https://github.com/liquidos-ai/AutoAgents"
+                    target="_blank"
+                    rel="noreferrer">View on GitHub</a
+                >
+                <a
+                    class="btn-ghost"
+                    href="https://liquidos-ai.github.io/AutoAgents/"
+                    target="_blank"
+                    rel="noreferrer">Open docs</a
+                >
+            </div>
+        </section>
+    </div>
 </Layout>

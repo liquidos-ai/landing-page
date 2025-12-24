@@ -3,12 +3,13 @@ import "../styles/global.css";
 import logo from "../assets/logo.svg";
 
 const {
-    title = "Liquidos | Production-grade Local-First Agent Platform",
+    title = "LiquidOS | Production-grade Local-First Agent Platform",
     description = "Fast, secure, portable agent infrastructure with local-first runtimes, traceability, and enterprise installs.",
 } = Astro.props;
 
 const pathname = Astro.url?.pathname ?? "/";
-const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
+const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
 const navLinks = [
     { href: "/", label: "Home" },
@@ -37,70 +38,160 @@ const navLinks = [
                     class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"
                 >
                     <a class="flex items-center gap-2" href="/">
-                        <span class="flex h-10 w-10 items-center justify-center rounded-xl border border-subtle bg-card-surface">
-                            <img src={logo.src} alt="Liquidos logo" class="h-6 w-6" />
+                        <span
+                            class="flex h-10 w-10 items-center justify-center rounded-xl border border-subtle bg-card-surface"
+                        >
+                            <img
+                                src={logo.src}
+                                alt="LiquidOS logo"
+                                class="h-6 w-6"
+                            />
                         </span>
                         <div class="leading-tight">
-                            <p class="text-base font-semibold text-heading">Liquidos</p>
-                            <p class="text-xs text-muted">Local-first agent infrastructure</p>
+                            <p class="text-base font-semibold text-heading">
+                                LiquidOS
+                            </p>
+                            <p class="text-xs text-muted">
+                                Local-first agent infrastructure
+                            </p>
                         </div>
                     </a>
-                    <nav class="hidden items-center gap-2 text-sm text-muted md:flex" aria-label="Primary">
+                    <nav
+                        class="hidden items-center gap-2 text-sm text-muted md:flex"
+                        aria-label="Primary"
+                    >
                         <details class="relative">
-                            <summary class="details-summary cursor-pointer rounded-full px-4 py-2 font-semibold text-muted transition hover:text-heading">
+                            <summary
+                                class="details-summary cursor-pointer rounded-full px-4 py-2 font-semibold text-muted transition hover:text-heading"
+                            >
                                 Products <span aria-hidden="true">▾</span>
                             </summary>
-                            <div class="absolute left-0 top-full mt-2 w-64 rounded-2xl border border-subtle bg-card-surface p-2 shadow-lg">
-                                <a class="block rounded-xl px-3 py-3 text-heading hover:bg-white/60" href="/autoagents">
-                                    <p class="text-sm font-semibold">AutoAgents SDK</p>
-                                    <p class="mt-1 text-xs text-muted">Available now — open-source Rust agent runtime.</p>
+                            <div
+                                class="absolute left-0 top-full mt-2 w-64 rounded-2xl border border-subtle bg-card-surface p-2 shadow-lg"
+                            >
+                                <a
+                                    class="block rounded-xl px-3 py-3 text-heading hover:bg-white/60"
+                                    href="/autoagents"
+                                >
+                                    <p class="text-sm font-semibold">
+                                        AutoAgents SDK
+                                    </p>
+                                    <p class="mt-1 text-xs text-muted">
+                                        Available now — open-source Rust agent
+                                        runtime.
+                                    </p>
                                 </a>
                             </div>
                         </details>
-                        {navLinks.map((item) => (
-                            <a
-                                class={`rounded-full px-4 py-2 font-semibold transition hover:text-heading ${
-                                    isActive(item.href) ? "text-heading" : "text-muted"
-                                }`}
-                                href={item.href}
+                        {
+                            navLinks.map((item) => (
+                                <a
+                                    class={`rounded-full px-4 py-2 font-semibold transition hover:text-heading ${
+                                        isActive(item.href)
+                                            ? "text-heading"
+                                            : "text-muted"
+                                    }`}
+                                    href={item.href}
+                                >
+                                    {item.label}
+                                </a>
+                            ))
+                        }
+                        <a
+                            class="btn-ghost ml-2"
+                            href="https://github.com/liquidos-ai/AutoAgents"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
                             >
-                                {item.label}
-                            </a>
-                        ))}
-                        <a class="btn-ghost ml-2" href="https://github.com/liquidos-ai/AutoAgents" target="_blank" rel="noreferrer">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.8-.25.8-.56v-2c-3.26.72-3.95-1.4-3.95-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.75.4-1.27.73-1.56-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.12-3.12 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.22-1.52 3.2-1.2 3.2-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.15 0 4.5-2.74 5.5-5.35 5.8.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z" />
+                                <path
+                                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.8-.25.8-.56v-2c-3.26.72-3.95-1.4-3.95-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.75.4-1.27.73-1.56-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.12-3.12 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.22-1.52 3.2-1.2 3.2-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.15 0 4.5-2.74 5.5-5.35 5.8.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z"
+                                ></path>
                             </svg>
                             GitHub
                         </a>
-                        <a class="btn-primary" href="/#waitlist">Join waitlist</a>
+                        <a class="btn-primary" href="/#waitlist"
+                            >Join waitlist</a
+                        >
                     </nav>
 
                     <details class="relative md:hidden">
-                        <summary class="details-summary rounded-full border border-subtle bg-card-surface px-4 py-2 text-sm font-semibold text-heading">
+                        <summary
+                            class="details-summary rounded-full border border-subtle bg-card-surface px-4 py-2 text-sm font-semibold text-heading"
+                        >
                             <span class="sr-only">Open menu</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                                <path d="M5 7h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-                                <path d="M5 17h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M5 7h14"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"></path>
+                                <path
+                                    d="M5 12h14"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"></path>
+                                <path
+                                    d="M5 17h14"
+                                    stroke="currentColor"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"></path>
                             </svg>
                         </summary>
-                        <div class="absolute right-0 top-full mt-2 w-72 rounded-2xl border border-subtle bg-card-surface p-2 shadow-lg">
-                            <a class="block rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60" href="/autoagents">
+                        <div
+                            class="absolute right-0 top-full mt-2 w-72 rounded-2xl border border-subtle bg-card-surface p-2 shadow-lg"
+                        >
+                            <a
+                                class="block rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60"
+                                href="/autoagents"
+                            >
                                 AutoAgents SDK
                             </a>
-                            {navLinks.map((item) => (
-                                <a class="block rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60" href={item.href}>
-                                    {item.label}
-                                </a>
-                            ))}
-                            <a class="mt-2 flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60" href="https://github.com/liquidos-ai/AutoAgents" target="_blank" rel="noreferrer">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.8-.25.8-.56v-2c-3.26.72-3.95-1.4-3.95-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.75.4-1.27.73-1.56-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.12-3.12 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.22-1.52 3.2-1.2 3.2-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.15 0 4.5-2.74 5.5-5.35 5.8.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z" />
+                            {
+                                navLinks.map((item) => (
+                                    <a
+                                        class="block rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60"
+                                        href={item.href}
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))
+                            }
+                            <a
+                                class="mt-2 flex items-center gap-2 rounded-xl px-3 py-3 text-sm font-semibold text-heading hover:bg-white/60"
+                                href="https://github.com/liquidos-ai/AutoAgents"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.8-.25.8-.56v-2c-3.26.72-3.95-1.4-3.95-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.75.4-1.27.73-1.56-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.12-3.12 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.22-1.52 3.2-1.2 3.2-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.15 0 4.5-2.74 5.5-5.35 5.8.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z"
+                                    ></path>
                                 </svg>
                                 GitHub
                             </a>
-                            <a class="mt-2 block rounded-xl bg-[linear-gradient(120deg,var(--accent),#1448c7)] px-3 py-3 text-center text-sm font-semibold text-white shadow-lg" href="/#waitlist">
+                            <a
+                                class="mt-2 block rounded-xl bg-[linear-gradient(120deg,var(--accent),#1448c7)] px-3 py-3 text-center text-sm font-semibold text-white shadow-lg"
+                                href="/#waitlist"
+                            >
                                 Join waitlist
                             </a>
                         </div>
@@ -108,7 +199,10 @@ const navLinks = [
                 </div>
             </header>
 
-            <main id="content" class="mx-auto max-w-6xl px-6 pb-16 pt-8 sm:pt-12">
+            <main
+                id="content"
+                class="mx-auto max-w-6xl px-6 pb-16 pt-8 sm:pt-12"
+            >
                 <slot />
             </main>
 
@@ -117,36 +211,79 @@ const navLinks = [
                     class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr_0.8fr]"
                 >
                     <a class="flex items-center gap-3" href="/">
-                        <span class="flex h-10 w-10 items-center justify-center rounded-xl border border-subtle bg-card-surface">
-                            <img src={logo.src} alt="Liquidos logo" class="h-6 w-6" />
+                        <span
+                            class="flex h-10 w-10 items-center justify-center rounded-xl border border-subtle bg-card-surface"
+                        >
+                            <img
+                                src={logo.src}
+                                alt="LiquidOS logo"
+                                class="h-6 w-6"
+                            />
                         </span>
                         <div>
                             <p class="text-lg font-semibold text-heading">
-                                Liquidos
+                                LiquidOS
                             </p>
                             <p class="text-sm text-muted">
-                                Production-grade local-first agent infrastructure.
+                                Production-grade local-first agent
+                                infrastructure.
                             </p>
                         </div>
                     </a>
 
                     <div class="space-y-3 text-sm">
-                        <p class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted">Product</p>
-                        <a class="block text-muted hover:text-heading" href="/#platform">Platform (coming soon)</a>
-                        <a class="block text-muted hover:text-heading" href="/autoagents">AutoAgents SDK</a>
-                        <a class="block text-muted hover:text-heading" href="/#waitlist">Waitlist</a>
+                        <p
+                            class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted"
+                        >
+                            Product
+                        </p>
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="/#platform">Platform (coming soon)</a
+                        >
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="/autoagents">AutoAgents SDK</a
+                        >
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="/#waitlist">Waitlist</a
+                        >
                     </div>
 
                     <div class="space-y-3 text-sm">
-                        <p class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted">Company</p>
-                        <a class="block text-muted hover:text-heading" href="/about">About</a>
-                        <a class="block text-muted hover:text-heading" href="/blog">Blog</a>
+                        <p
+                            class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted"
+                        >
+                            Company
+                        </p>
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="/about">About</a
+                        >
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="/blog">Blog</a
+                        >
                     </div>
 
                     <div class="space-y-3 text-sm">
-                        <p class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted">Contact</p>
-                        <a class="block text-muted hover:text-heading" href="mailto:vishwak@liquidos.ai">vishwak@liquidos.ai</a>
-                        <a class="block text-muted hover:text-heading" href="https://github.com/liquidos-ai/AutoAgents" target="_blank" rel="noreferrer">GitHub</a>
+                        <p
+                            class="text-xs font-semibold uppercase tracking-[0.2rem] text-muted"
+                        >
+                            Contact
+                        </p>
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="mailto:vishwak@liquidos.ai"
+                            >vishwak@liquidos.ai</a
+                        >
+                        <a
+                            class="block text-muted hover:text-heading"
+                            href="https://github.com/liquidos-ai/AutoAgents"
+                            target="_blank"
+                            rel="noreferrer">GitHub</a
+                        >
                     </div>
                 </div>
             </footer>
