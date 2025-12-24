@@ -15,27 +15,31 @@ const featuredPosts = (await getCollection("blog"))
     description="AutoAgents is an open-source Rust SDK for building reliable agent systems. Liquidos Platform is coming soon with enterprise tracing, policy, and evals."
 >
     <div class="space-y-20">
-        <section class="relative py-12 sm:py-16">
+        <section class="relative py-8 sm:py-14">
             <div
-                class="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center"
+                class="relative flex flex-col gap-10 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center"
             >
-                <div class="space-y-7">
-                    <div class="space-y-3">
-                        <p class="section-label">Liquidos</p>
-                        <h1
-                            class="serif-head text-4xl leading-tight text-heading sm:text-5xl"
-                        >
-                            Building Blocks for the<br />Agentic Future
-                        </h1>
-                        <p class="max-w-2xl text-lg text-muted">
-                            AutoAgents is our open-source Rust SDK for building
-                            reliable agent systems today. Liquidos Platform is
-                            coming soon with enterprise tracing, policy
-                            controls, evals, and deployment workflows for teams
-                            shipping agents in regulated and mission-critical
-                            environments.
-                        </p>
+                <div class="space-y-3 lg:pr-6">
+                    <p class="section-label">Liquidos</p>
+                    <h1 class="serif-head text-4xl leading-tight text-heading sm:text-5xl">
+                        Building Blocks for the<br />Agentic Future
+                    </h1>
+                </div>
+
+                <div class="relative lg:col-start-2 lg:row-span-2 lg:row-start-1">
+                    <div class="mx-auto w-full max-w-[520px] lg:max-w-[680px]">
+                        <ObjParticles />
                     </div>
+                </div>
+
+                <div class="space-y-7 lg:pr-6 lg:row-start-2">
+                    <p class="max-w-2xl text-lg text-muted">
+                        AutoAgents is our open-source Rust SDK for building
+                        reliable agent systems today. Liquidos Platform is
+                        coming soon with enterprise tracing, policy controls,
+                        evals, and deployment workflows for teams shipping
+                        agents in regulated and mission-critical environments.
+                    </p>
 
                     <div class="flex flex-wrap gap-2">
                         <span class="pill">AutoAgents SDK (OSS)</span>
@@ -68,9 +72,7 @@ const featuredPosts = (await getCollection("blog"))
 
                     <div class="grid gap-4 sm:grid-cols-3">
                         <div class="soft-card rounded-2xl p-4">
-                            <p
-                                class="text-xs uppercase tracking-[0.2rem] text-muted"
-                            >
+                            <p class="text-xs uppercase tracking-[0.2rem] text-muted">
                                 Available now
                             </p>
                             <p class="mt-2 font-semibold text-heading">
@@ -81,9 +83,7 @@ const featuredPosts = (await getCollection("blog"))
                             </p>
                         </div>
                         <div class="soft-card rounded-2xl p-4">
-                            <p
-                                class="text-xs uppercase tracking-[0.2rem] text-muted"
-                            >
+                            <p class="text-xs uppercase tracking-[0.2rem] text-muted">
                                 Coming soon
                             </p>
                             <p class="mt-2 font-semibold text-heading">
@@ -95,9 +95,7 @@ const featuredPosts = (await getCollection("blog"))
                             </p>
                         </div>
                         <div class="soft-card rounded-2xl p-4">
-                            <p
-                                class="text-xs uppercase tracking-[0.2rem] text-muted"
-                            >
+                            <p class="text-xs uppercase tracking-[0.2rem] text-muted">
                                 Coming soon
                             </p>
                             <p class="mt-2 font-semibold text-heading">
@@ -107,12 +105,6 @@ const featuredPosts = (await getCollection("blog"))
                                 Budgets, approvals, and regression suites.
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="relative hidden md:block">
-                    <div class="mx-auto w-full max-w-[680px]">
-                        <ObjParticles />
                     </div>
                 </div>
             </div>
