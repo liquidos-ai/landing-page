@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Layout.astro";
+import founderImg from "../assets/proile.jpg";
+import kalyanImg from "../assets/kalyan_profile.jpg";
+---
+
+<Layout
+    title="Liquidos | About"
+    description="Liquidos is building production-grade infrastructure for agentic systems across enterprise and robotics."
+>
+    <div class="space-y-10">
+        <div class="space-y-3">
+            <p class="pill">About</p>
+            <h1 class="text-4xl font-semibold text-heading">About Liquidos</h1>
+            <p class="max-w-3xl text-muted">
+                Liquidos is building next-generation infrastructure for agentic
+                systems — combining rigorous research with production-grade
+                engineering. Our goal is simple: make agents <strong
+                    >safe to deploy</strong
+                >, <strong>easy to operate</strong>, and <strong
+                    >measurable by default</strong
+                >, whether they run in a data center or on a robot.
+            </p>
+        </div>
+
+        <section class="space-y-4">
+            <div class="space-y-2">
+                <p class="section-label">Leadership</p>
+                <h2 class="serif-head text-2xl text-heading sm:text-3xl">
+                    Founding team
+                </h2>
+            </div>
+
+            <div class="grid gap-4 md:grid-cols-2">
+                <div
+                    class="glass-card flex flex-col gap-6 rounded-2xl p-6 sm:flex-row sm:items-center"
+                >
+                    <img
+                        src={founderImg.src}
+                        alt="Sai Vishwak Korimerla"
+                        class="h-24 w-24 rounded-full object-cover"
+                    />
+                    <div class="space-y-2">
+                        <p
+                            class="text-sm uppercase tracking-[0.2rem] text-muted"
+                        >
+                            Founder &amp; CEO
+                        </p>
+                        <h3 class="text-2xl font-semibold text-heading">
+                            Sai Vishwak Korimerla
+                        </h3>
+                        <p class="text-sm text-muted">
+                            Creator and lead maintainer of AutoAgents.
+                            Background in systems engineering, AI research, and
+                            large-scale automation platforms — focused on
+                            reliable agent runtimes, evaluation systems, and
+                            developer-first infrastructure for autonomous
+                            systems.
+                        </p>
+                        <a
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted"
+                            href="https://www.linkedin.com/in/sai-vishwak-korimerla/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            LinkedIn <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-card flex flex-col gap-6 rounded-2xl p-6 sm:flex-row sm:items-center"
+                >
+                    <img
+                        src={kalyanImg.src}
+                        alt="Kalyan Korimerla"
+                        class="h-24 w-24 rounded-full object-cover"
+                    />
+                    <div class="space-y-2">
+                        <p
+                            class="text-sm uppercase tracking-[0.2rem] text-muted"
+                        >
+                            Founding member &amp; advisor
+                        </p>
+                        <h3 class="text-2xl font-semibold text-heading">
+                            Kalyan Korimerla
+                        </h3>
+                        <p class="text-sm text-muted">
+                            Serial entrepreneur with an MBA from Carnegie
+                            Mellon University and a master’s degree from the
+                            University of California. Advises Liquidos on
+                            strategy, go-to-market, and building durable
+                            businesses around deep technology.
+                        </p>
+                        <a
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted"
+                            href="https://www.linkedin.com/in/kalyan-korimerla-700aa4/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            LinkedIn <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid gap-6 md:grid-cols-2">
+            <div class="paper rounded-2xl p-6">
+                <h2 class="text-xl font-semibold text-heading">Team</h2>
+                <p class="mt-2 text-muted">
+                    Liquidos is built by a small, highly focused team of
+                    engineers and researchers with experience in:
+                </p>
+                <ul class="mt-3 space-y-2 text-muted">
+                    <li>• Distributed systems</li>
+                    <li>• Robotics and edge computing</li>
+                    <li>• AI agents and evaluation</li>
+                    <li>• High-performance systems in Rust</li>
+                </ul>
+            </div>
+            <div class="paper rounded-2xl p-6">
+                <h2 class="text-xl font-semibold text-heading">Mission</h2>
+                <p class="mt-2 text-muted">
+                    To enable teams to build, deploy, monitor, and refine
+                    agentic systems that are reliable, secure, and portable —
+                    from enterprise servers to robots in the real world.
+                </p>
+            </div>
+        </section>
+
+        <section class="rounded-2xl border border-subtle bg-card-surface p-8">
+            <h3 class="text-2xl font-semibold text-heading">Our Values</h3>
+            <ul class="mt-4 space-y-2 text-muted">
+                <li>
+                    • <strong>Local-First</strong> — Data locality and low latency
+                    are defaults, not options
+                </li>
+                <li>
+                    • <strong>Security by Design</strong> — Enterprise-grade safety,
+                    auditability, and control
+                </li>
+                <li>
+                    • <strong>Research-Driven</strong> — Measurement, evaluation,
+                    and reproducibility matter
+                </li>
+                <li>
+                    • <strong>Developer-First</strong> — Simple APIs, fast onboarding,
+                    minimal friction
+                </li>
+                <li>
+                    • <strong>Open Foundations</strong> — Core infrastructure should
+                    be open and extensible
+                </li>
+            </ul>
+        </section>
+    </div>
+</Layout>

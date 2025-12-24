@@ -1,0 +1,18 @@
+---
+export interface Props {
+	label?: string;
+	title: string;
+	subtitle?: string;
+	align?: "left" | "center";
+}
+
+const { label, title, subtitle, align = "left" } = Astro.props;
+const alignClass = align === "center" ? "text-center" : "text-left";
+---
+
+<div class={`space-y-2 ${alignClass}`}>
+	{label ? <p class="section-label">{label}</p> : null}
+	<h2 class="serif-head text-3xl text-heading sm:text-4xl">{title}</h2>
+	{subtitle ? <p class={`text-muted ${align === "center" ? "mx-auto max-w-3xl" : "max-w-3xl"}`}>{subtitle}</p> : null}
+</div>
+

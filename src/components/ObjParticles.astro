@@ -1,0 +1,37 @@
+---
+import scriptUrl from "../scripts/particle-sphere.ts?url";
+---
+
+<div class="particle-shell pointer-events-none relative w-full max-w-[560px] aspect-square">
+	<div class="particle-halo" aria-hidden="true"></div>
+	<div data-particle-sphere class="particle-stage absolute inset-0 h-full w-full"></div>
+</div>
+<script type="module" src={scriptUrl}></script>
+
+<style>
+	.particle-shell {
+		isolation: isolate;
+	}
+
+	.particle-halo {
+		position: absolute;
+		inset: -10%;
+		border-radius: 999px;
+		background-image:
+			radial-gradient(circle at 32% 30%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 64%),
+			radial-gradient(circle at 72% 74%, color-mix(in srgb, var(--accent-2) 10%, transparent), transparent 68%);
+		filter: blur(30px);
+		opacity: 0.22;
+		mix-blend-mode: multiply;
+	}
+
+	.particle-stage {
+		position: absolute;
+		inset: 0;
+	}
+
+	.particle-shell :global(canvas) {
+		border-radius: 999px;
+		filter: drop-shadow(0 0 12px color-mix(in srgb, var(--accent) 14%, transparent));
+	}
+</style>

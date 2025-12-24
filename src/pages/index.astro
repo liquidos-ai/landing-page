@@ -1,0 +1,586 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import ObjParticles from "../components/ObjParticles.astro";
+import SectionHeader from "../components/ui/SectionHeader.astro";
+import FeatureCard from "../components/ui/FeatureCard.astro";
+
+const featuredPosts = (await getCollection("blog"))
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .slice(0, 2);
+---
+
+<Layout
+    title="Liquidos | Building Blocks for the Agentic Future"
+    description="AutoAgents is an open-source Rust SDK for building reliable agent systems. Liquidos Platform is coming soon with enterprise tracing, policy, and evals."
+>
+    <div class="space-y-20">
+        <section class="relative py-12 sm:py-16">
+            <div
+                class="relative grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center"
+            >
+                <div class="space-y-7">
+                    <div class="space-y-3">
+                        <p class="section-label">Liquidos</p>
+                        <h1
+                            class="serif-head text-4xl leading-tight text-heading sm:text-5xl"
+                        >
+                            Building Blocks for the<br />Agentic Future
+                        </h1>
+                        <p class="max-w-2xl text-lg text-muted">
+                            AutoAgents is our open-source Rust SDK for building
+                            reliable agent systems today. Liquidos Platform is
+                            coming soon with enterprise tracing, policy
+                            controls, evals, and deployment workflows for teams
+                            shipping agents in regulated and mission-critical
+                            environments.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="pill">AutoAgents SDK (OSS)</span>
+                        <span class="pill">Rust-native runtime</span>
+                        <span class="pill">WASM tool sandboxing</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a class="btn-primary" href="/#waitlist">Join waitlist</a>
+                        <a
+                            class="btn-ghost"
+                            href="https://github.com/liquidos-ai/AutoAgents"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <svg
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.8-.25.8-.56v-2c-3.26.72-3.95-1.4-3.95-1.4-.53-1.35-1.3-1.71-1.3-1.71-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.39.97.1-.75.4-1.27.73-1.56-2.6-.3-5.34-1.3-5.34-5.8 0-1.28.46-2.33 1.2-3.15-.12-.3-.52-1.5.12-3.12 0 0 .98-.32 3.2 1.2a11 11 0 0 1 5.84 0c2.22-1.52 3.2-1.2 3.2-1.2.64 1.62.24 2.82.12 3.12.75.82 1.2 1.87 1.2 3.15 0 4.5-2.74 5.5-5.35 5.8.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z"
+                                ></path>
+                            </svg>
+                            AutoAgents on GitHub
+                        </a>
+                    </div>
+
+                    <div class="grid gap-4 sm:grid-cols-3">
+                        <div class="soft-card rounded-2xl p-4">
+                            <p
+                                class="text-xs uppercase tracking-[0.2rem] text-muted"
+                            >
+                                Available now
+                            </p>
+                            <p class="mt-2 font-semibold text-heading">
+                                AutoAgents SDK
+                            </p>
+                            <p class="mt-1 text-sm text-muted">
+                                Open-source Rust runtime for agent systems.
+                            </p>
+                        </div>
+                        <div class="soft-card rounded-2xl p-4">
+                            <p
+                                class="text-xs uppercase tracking-[0.2rem] text-muted"
+                            >
+                                Coming soon
+                            </p>
+                            <p class="mt-2 font-semibold text-heading">
+                                Platform tracing
+                            </p>
+                            <p class="mt-1 text-sm text-muted">
+                                Audit-friendly traces, artifacts, and debugging
+                                context.
+                            </p>
+                        </div>
+                        <div class="soft-card rounded-2xl p-4">
+                            <p
+                                class="text-xs uppercase tracking-[0.2rem] text-muted"
+                            >
+                                Coming soon
+                            </p>
+                            <p class="mt-2 font-semibold text-heading">
+                                Policy + evals
+                            </p>
+                            <p class="mt-1 text-sm text-muted">
+                                Budgets, approvals, and regression suites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative hidden md:block">
+                    <div class="mx-auto w-full max-w-[680px]">
+                        <ObjParticles />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paper rounded-2xl border border-subtle p-7 sm:p-8">
+            <div
+                class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
+            >
+                <div class="space-y-2">
+                    <p class="section-label">Mission</p>
+                    <h2 class="serif-head text-2xl text-heading sm:text-3xl">
+                        Speed, safety, portability — without tradeoffs
+                    </h2>
+                </div>
+                <div
+                    class="soft-card rounded-xl px-4 py-2 text-xs font-semibold text-heading"
+                >
+                    Local-first by default • Enterprise-ready controls •
+                    Measurable outcomes
+                </div>
+            </div>
+            <p class="mt-4 max-w-4xl text-sm text-muted">
+                Liquidos is for teams that can’t rely on “best effort” AI. Run
+                agents where your data lives, keep execution deterministic, and
+                layer in platform-grade tracing, policy, and evaluation as you
+                scale.
+            </p>
+        </section>
+
+        <section class="space-y-7" id="platform">
+            <SectionHeader
+                label="Platform (coming soon)"
+                title="Modules that make agents shippable"
+                subtitle="Liquidos Platform is in active development. Join the waitlist for early access and roadmap previews."
+            />
+
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <FeatureCard
+                    eyebrow="Execution"
+                    title="Local-first runtime"
+                    description="Run where your data lives: on-prem, edge, and air-gapped without cloud lock-in."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M4 7.5C4 6.12 5.12 5 6.5 5h11C18.88 5 20 6.12 20 7.5v9c0 1.38-1.12 2.5-2.5 2.5h-11C5.12 19 4 17.88 4 16.5v-9Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"></path>
+                        <path
+                            d="M8 15h8"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </FeatureCard>
+                <FeatureCard
+                    eyebrow="Safety"
+                    title="Policy + approvals"
+                    description="Budgeting, approvals, and scoped tools to align agent behavior with operational rules."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M12 2.8 20 6.3v6.1c0 5-3.4 9.4-8 10.8-4.6-1.4-8-5.8-8-10.8V6.3L12 2.8Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"></path>
+                        <path
+                            d="m9 12.5 2 2 4-4.2"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </FeatureCard>
+                <FeatureCard
+                    eyebrow="Observability"
+                    title="Tracing by default"
+                    description="End-to-end traces, artifacts, and debugging context for audit-ready deployments."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M4 19V5"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M4 16h16"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M7 14l3-3 3 2 4-5"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </FeatureCard>
+                <FeatureCard
+                    eyebrow="Evaluation"
+                    title="Evals in the loop"
+                    description="Measure reliability with repeatable evals and feedback loops that improve over time."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M7 3h10v18H7V3Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"></path>
+                        <path
+                            d="M9.5 8h5"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M9.5 12h5"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                        <path
+                            d="M9.5 16h3"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </FeatureCard>
+                <FeatureCard
+                    eyebrow="Portability"
+                    title="WASM tool sandboxing"
+                    description="Portable, secure tool execution for consistent behavior across machines and environments."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M4 8.5 12 4l8 4.5V16L12 20.5 4 16V8.5Z"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M12 9v11.5"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </FeatureCard>
+                <FeatureCard
+                    eyebrow="Deployment"
+                    title="On-prem installations"
+                    description="Enterprise deployment patterns with hardened installs and integration hooks for RBAC and compliance."
+                >
+                    <svg
+                        slot="icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M6 20V8.5L12 5l6 3.5V20"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linejoin="round"></path>
+                        <path
+                            d="M9 20v-6h6v6"
+                            stroke="currentColor"
+                            stroke-width="1.8"
+                            stroke-linejoin="round"></path>
+                    </svg>
+                </FeatureCard>
+            </div>
+        </section>
+
+        <section class="space-y-6" id="what-is-liquidos">
+            <SectionHeader
+                label="Overview"
+                title="What is Liquidos?"
+                subtitle="A research-driven, production-first effort to make agent systems reliable, observable, and deployable anywhere."
+            />
+            <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+                <div class="space-y-4 text-lg text-muted">
+                    <p>
+                        Liquidos is building a local-first agent platform for
+                        environments where security, latency, reliability, and
+                        observability are non-negotiable — from
+                        <strong>enterprise on-prem deployments</strong> to
+                        <strong>local-first robotics</strong>.
+                    </p>
+                    <p>
+                        AutoAgents is available now as the open-source SDK. The
+                        Liquidos Platform layer is coming soon for teams that
+                        need audit-ready controls and operations.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-5">
+                    <h3 class="text-lg font-semibold text-heading">
+                        Built for critical environments
+                    </h3>
+                    <ul class="mt-3 space-y-2 text-sm text-muted">
+                        <li>
+                            • Secure by default with traceability and
+                            auditability
+                        </li>
+                        <li>
+                            • Deterministic Rust runtimes with portability baked
+                            in
+                        </li>
+                        <li>
+                            • Evals, feedback loops, and observability built in
+                        </li>
+                        <li>
+                            • Local-first execution across laptops, servers,
+                            edge, and robots
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <SectionHeader
+                label="Workflow"
+                title="From prototype to deployment"
+                subtitle="A platform flow that makes “agent in production” a repeatable process."
+            />
+            <div class="grid gap-4 lg:grid-cols-3">
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Step 1
+                    </p>
+                    <h3 class="mt-2 text-lg font-semibold text-heading">
+                        Build with AutoAgents SDK
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Compose agents, tools, and memory with structured,
+                        testable interfaces.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Step 2
+                    </p>
+                    <h3 class="mt-2 text-lg font-semibold text-heading">
+                        Add platform controls (soon)
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Tracing, policy, and evals to ship confidently in
+                        enterprise environments.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Step 3
+                    </p>
+                    <h3 class="mt-2 text-lg font-semibold text-heading">
+                        Deploy anywhere
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Local-first execution across laptops, private servers,
+                        edge, and robots.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6" id="why-liquidos">
+            <SectionHeader
+                label="Why"
+                title="Why Liquidos?"
+                subtitle="A platform stance centered on locality, safety, speed, and measured outcomes."
+            />
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Local-first
+                    </p>
+                    <h3 class="mt-2 text-xl font-semibold text-heading">
+                        Data stays close
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Run agents where your data lives — laptops, private
+                        servers, edge devices, and robots. No forced cloud
+                        dependency.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Production-grade
+                    </p>
+                    <h3 class="mt-2 text-xl font-semibold text-heading">
+                        Audit-ready from day one
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Observability, traceability, and hardened enterprise
+                        installs with policy controls and audit logs.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Performance
+                    </p>
+                    <h3 class="mt-2 text-xl font-semibold text-heading">
+                        Fast &amp; portable runtimes
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Native Rust runtimes keep overhead low while staying
+                        portable across environments.
+                    </p>
+                </div>
+                <div class="paper rounded-2xl p-6">
+                    <p class="text-xs uppercase tracking-[0.2rem] text-muted">
+                        Research → Production
+                    </p>
+                    <h3 class="mt-2 text-xl font-semibold text-heading">
+                        Measured reliability
+                    </h3>
+                    <p class="mt-2 text-sm text-muted">
+                        Integrated evaluation, tracing, and feedback loops to
+                        move confidently from experiments to deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6" id="audience">
+            <SectionHeader
+                label="Audience"
+                title="Who is this for?"
+                subtitle="Teams building AI systems where reliability and operational clarity are non-negotiable."
+            />
+            <div class="grid gap-4 md:grid-cols-3">
+                <div class="soft-card rounded-xl p-4">
+                    <p class="font-semibold text-heading">Enterprise teams</p>
+                    <p class="text-sm text-muted">
+                        Deploying agents on-prem or in regulated environments.
+                    </p>
+                </div>
+                <div class="soft-card rounded-xl p-4">
+                    <p class="font-semibold text-heading">Robotics teams</p>
+                    <p class="text-sm text-muted">
+                        Building local-first autonomous systems.
+                    </p>
+                </div>
+                <div class="soft-card rounded-xl p-4">
+                    <p class="font-semibold text-heading">Research teams</p>
+                    <p class="text-sm text-muted">
+                        Need reproducibility, evaluation, and traceability.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <SectionHeader
+                label="Updates"
+                title="Latest from the blog"
+                subtitle="Research notes, system design, and production lessons from building agents."
+            />
+            <div class="grid gap-6 md:grid-cols-2">
+                {
+                    featuredPosts.map((post) => (
+                        <article class="paper rounded-2xl p-6">
+                            <div class="flex items-center gap-3 text-xs uppercase tracking-[0.2rem] text-muted">
+                                <span class="rounded-full border border-subtle bg-card-surface px-3 py-1 text-[0.7rem] font-semibold text-heading">
+                                    {post.data.tag}
+                                </span>
+                                <span>
+                                    {post.data.date.toLocaleDateString(
+                                        "en-US",
+                                        {
+                                            month: "short",
+                                            day: "numeric",
+                                            year: "numeric",
+                                        },
+                                    )}
+                                </span>
+                                <span aria-hidden="true">•</span>
+                                <span>{post.data.readTime}</span>
+                            </div>
+                            <h3 class="mt-3 text-2xl font-semibold text-heading">
+                                {post.data.title}
+                            </h3>
+                            <p class="mt-2 text-sm text-muted">
+                                {post.data.description}
+                            </p>
+                            <a
+                                class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted"
+                                href={`/blog/${post.slug}`}
+                            >
+                                Read article <span aria-hidden="true">→</span>
+                            </a>
+                        </article>
+                    ))
+                }
+            </div>
+            <div>
+                <a class="btn-ghost" href="/blog">View all posts</a>
+            </div>
+        </section>
+
+        <section
+            class="paper rounded-2xl border border-subtle p-8 text-center"
+            id="waitlist"
+        >
+            <div class="mx-auto max-w-3xl space-y-4">
+                <h2 class="serif-head text-3xl text-heading sm:text-4xl">
+                    Join the Waitlist
+                </h2>
+                <p class="text-lg text-muted">
+                    Liquidos Platform is launching soon. Join the waitlist for
+                    early access, roadmap previews, and enterprise onboarding.
+                </p>
+                <form
+                    class="mx-auto flex max-w-md flex-col gap-3 sm:flex-row"
+                    action="https://getlaunchlist.com/s/LZUJcK"
+                    method="POST"
+                >
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="Enter your email"
+                        class="flex-1 rounded-full border border-subtle bg-white/70 px-5 py-3 text-sm text-heading placeholder:text-muted focus:outline-none"
+                    />
+                    <button class="btn-primary justify-center whitespace-nowrap" type="submit">
+                        Join the waitlist
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </form>
+                <div class="pt-1">
+                    <a class="inline-flex items-center gap-2 text-sm font-semibold text-heading hover:text-muted" href="mailto:vishwak@liquidos.ai">
+                        Contact the team
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</Layout>

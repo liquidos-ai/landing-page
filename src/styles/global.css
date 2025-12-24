@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+	:root {
+		--bg: #f6f8fb;
+		--surface: #ffffff;
+		--card: #f1f5f9;
+		--text: #0f172a;
+		--muted: #4b5563;
+		--heading: #0b1220;
+		--border: #e2e8f0;
+		--accent: #1f62f2;
+		--accent-2: #0f9f8f;
+		--ring: rgba(31, 98, 242, 0.45);
+		--shadow-soft: 0 16px 40px rgba(15, 23, 42, 0.08);
+		color-scheme: light;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: "Sohne", "Inter", "Helvetica Neue", Arial, sans-serif;
+		background-color: var(--bg);
+		color: var(--text);
+		min-height: 100vh;
+	}
+
+	::selection {
+		background-color: rgba(31, 98, 242, 0.14);
+		color: var(--heading);
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--ring);
+		outline-offset: 2px;
+	}
+}
+
+@layer utilities {
+	.serif-head {
+		font-family: "Georgia", "Times New Roman", serif;
+		letter-spacing: -0.01em;
+	}
+
+	.paper {
+		background: #fff;
+		border: 1px solid var(--border);
+		box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
+	}
+
+	.section-label {
+		font-size: 0.75rem;
+		letter-spacing: 0.24rem;
+		text-transform: uppercase;
+		color: var(--muted);
+	}
+
+	.bg-app {
+		background-color: var(--bg);
+	}
+
+	.surface {
+		background-color: var(--surface);
+	}
+
+	.card-surface {
+		background: var(--card);
+	}
+
+	.bg-card-surface {
+		background: var(--card);
+	}
+
+	.text-primary {
+		color: var(--text);
+	}
+
+	.text-muted {
+		color: var(--muted);
+	}
+
+	.text-heading {
+		color: var(--heading);
+	}
+
+	.border-subtle {
+		border-color: var(--border);
+	}
+
+	.gradient-text {
+		background-image: linear-gradient(115deg, var(--accent), var(--accent-2));
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
+	.lab-grid {
+		background-image:
+			linear-gradient(to right, color-mix(in srgb, var(--border) 40%, transparent) 1px, transparent 1px),
+			linear-gradient(to bottom, color-mix(in srgb, var(--border) 40%, transparent) 1px, transparent 1px);
+		background-size: 120px 120px;
+		mask-image: radial-gradient(800px circle at 20% 20%, black, transparent 70%);
+	}
+
+	.lab-frame {
+		border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+		box-shadow: 0 12px 26px rgba(15, 23, 42, 0.08);
+	}
+
+	.text-glow {
+		text-shadow: 0 10px 35px rgba(31, 98, 242, 0.22);
+	}
+
+	.glass-card {
+		background: var(--surface);
+		border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+		box-shadow: var(--shadow-soft);
+	}
+
+	.soft-card {
+		background: var(--surface);
+		border: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
+		box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+	}
+
+	.btn-primary {
+		@apply inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold shadow-lg transition-all duration-300;
+		background-image: linear-gradient(120deg, var(--accent), #1448c7);
+		color: #f8fbff;
+		box-shadow: 0 14px 30px rgba(31, 98, 242, 0.25);
+	}
+
+	.btn-primary:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 18px 45px rgba(31, 98, 242, 0.3);
+	}
+
+	.btn-ghost {
+		@apply inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-semibold transition;
+		border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+		color: var(--text);
+		background: color-mix(in srgb, var(--surface) 80%, transparent);
+	}
+
+	.btn-ghost:hover {
+		border-color: var(--accent);
+		color: var(--heading);
+	}
+
+	.pill {
+		@apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide;
+		border: 1px solid color-mix(in srgb, var(--border) 80%, transparent);
+		color: var(--heading);
+		background: var(--surface);
+	}
+
+	.grid-mask {
+		background-image: linear-gradient(to right, color-mix(in srgb, var(--border) 22%, transparent) 1px, transparent 1px),
+			linear-gradient(to bottom, color-mix(in srgb, var(--border) 22%, transparent) 1px, transparent 1px);
+		background-size: 140px 140px;
+		mask-image: radial-gradient(500px circle at center, black, transparent 70%);
+	}
+
+	.skip-link {
+		position: absolute;
+		left: 1rem;
+		top: 0.75rem;
+		z-index: 60;
+		transform: translateY(-200%);
+		border-radius: 999px;
+		border: 1px solid var(--border);
+		background: color-mix(in srgb, var(--surface) 92%, transparent);
+		padding: 0.5rem 0.9rem;
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--heading);
+	}
+
+	.skip-link:focus {
+		transform: translateY(0);
+	}
+
+	.details-summary {
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.details-summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.details-summary::marker {
+		content: "";
+	}
+
+	.markdown {
+		color: var(--muted);
+	}
+
+	.markdown :is(h2, h3) {
+		color: var(--heading);
+		font-weight: 650;
+		letter-spacing: -0.01em;
+	}
+
+	.markdown h2 {
+		margin-top: 2rem;
+		font-size: 1.5rem;
+	}
+
+	.markdown h3 {
+		margin-top: 1.5rem;
+		font-size: 1.2rem;
+	}
+
+	.markdown p {
+		margin-top: 1rem;
+		line-height: 1.75;
+	}
+
+	.markdown a {
+		color: var(--heading);
+		text-decoration: underline;
+		text-decoration-color: color-mix(in srgb, var(--accent) 30%, transparent);
+		text-underline-offset: 0.2em;
+	}
+
+	.markdown :is(code, pre) {
+		font-family:
+			ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+			"Courier New", monospace;
+	}
+
+	.markdown code {
+		border-radius: 0.5rem;
+		border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+		background: color-mix(in srgb, var(--card) 70%, transparent);
+		padding: 0.15rem 0.35rem;
+		font-size: 0.875em;
+		color: var(--heading);
+	}
+
+	.markdown pre {
+		margin-top: 1rem;
+		overflow: auto;
+		border-radius: 1rem;
+		border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+		background: #0b1220;
+		padding: 1rem 1.2rem;
+		color: rgba(248, 251, 255, 0.9);
+	}
+
+	.markdown pre code {
+		border: 0;
+		background: transparent;
+		padding: 0;
+		color: inherit;
+	}
+
+	.markdown ul {
+		margin-top: 1rem;
+		padding-left: 1.2rem;
+	}
+
+	.markdown li {
+		margin-top: 0.5rem;
+	}
+
+	.code-block {
+		overflow: auto;
+		border-radius: 1rem;
+		border: 1px solid color-mix(in srgb, var(--border) 85%, transparent);
+		background: #0b1220;
+		padding: 1rem 1.2rem;
+		color: rgba(248, 251, 255, 0.9);
+	}
+
+	.code-block code {
+		font-family:
+			ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+			"Courier New", monospace;
+	}
+}
