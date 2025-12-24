@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { createNoise4D } from "simplex-noise";
 
-function init(container: HTMLElement) {
+function init(container) {
 	const scene = new THREE.Scene();
 	const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 	const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
@@ -34,7 +34,7 @@ function init(container: HTMLElement) {
 		const dist = Math.sqrt(x * x + y * y + z * z) / radius;
 		const color = new THREE.Color();
 		if (dist < 0.35) {
-			color.set("#0c1e40"); // navy base
+			color.set("#0c1e40");
 		} else if (dist < 0.7) {
 			const t = (dist - 0.35) / 0.35;
 			color.lerpColors(new THREE.Color("#0c1e40"), new THREE.Color("#1f4ba3"), t);
@@ -69,7 +69,7 @@ function init(container: HTMLElement) {
 	let targetRotationY = 0;
 	let targetRotationX = 0;
 
-	const handleMouseMove = (e: MouseEvent) => {
+	const handleMouseMove = (e) => {
 		const rect = container.getBoundingClientRect();
 		const offsetX = (e.clientX - rect.left) / rect.width - 0.5;
 		const offsetY = (e.clientY - rect.top) / rect.height - 0.5;
@@ -81,11 +81,11 @@ function init(container: HTMLElement) {
 	window.addEventListener("resize", setSize);
 
 	let time = 0;
-	let animationId: number;
+	let animationId;
 	const animate = () => {
 		animationId = requestAnimationFrame(animate);
 		time += 0.003;
-		const pos = geometry.attributes.position.array as Float32Array;
+		const pos = geometry.attributes.position.array;
 		const wavePulse = Math.sin(time * 0.5) * 0.12;
 		for (let i = 0; i < particleCount; i++) {
 			const i3 = i * 3;
@@ -121,10 +121,10 @@ function init(container: HTMLElement) {
 }
 
 function bootstrap() {
-	const targets = document.querySelectorAll<HTMLElement>("[data-particle-sphere]");
+	const targets = document.querySelectorAll("[data-particle-sphere]");
 	targets.forEach((el) => {
-		if ((el as any)._sphereInit) return;
-		(el as any)._sphereInit = true;
+		if (el._sphereInit) return;
+		el._sphereInit = true;
 		const cleanup = init(el);
 		el.addEventListener("astro:after-swap", cleanup);
 	});
@@ -134,3 +134,4 @@ if (typeof window !== "undefined") {
 	bootstrap();
 	window.addEventListener("astro:after-swap", bootstrap);
 }
+
